@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+
+.header{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    /* deixa a grade de fotos junta com 350 * 3 fotos + 175px de folga nas laterais */
+    max-width: 1400px;
+    /* centraliza a grade */
+    margin: 0 auto;
+    /* espaçamento entra as imagens */
+    gap: 16px;
+}
+
+.gallery::after{
+    /* criar um espaço para forçar a última imagem para a esquerda devido ao align-items: center */
+    content: "";
+    width: 350px;
+}
+
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    /* não achatar as imagens, centralizando e cobrindo as extremidades */
+    object-fit: cover;
+    border-radius: 10px;
+}
