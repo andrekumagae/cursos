@@ -159,8 +159,24 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-	body{
-		background-color: red;
+	/* largura das seções responsivas */
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+		width: auto;
+	}
+
+	/* alinhar imagem */
+	h1{
+		text-align: center;
+	}
+
+	/* ajustar nav para celular */
+	nav{
+		position: static;
+	}
+
+	/* deixar li e imagem responsivos */
+	.lista-beneficios, .imagem-beneficios{
+		width: 100%;
 	}
 }
 
