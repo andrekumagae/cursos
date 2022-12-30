@@ -287,8 +287,6 @@ docker run -dti --mount type=bind,src=/data/debian-A,dst=/data,ro debian
 
 ## Mount do tipo bind
 
-
-
 Criamos um diretório abaixo para nosso novo destino:
 
 ```bash
@@ -358,4 +356,46 @@ Parece com tipo named, porém não precisa especificar o nome. Mais voltado para
 ```bash
 docker network create minha-rede
 docker run -dit --name Ubuntu-B --network minha-rede  ubuntu
+```
+
+## Criando arquivo de configuração
+
+Criamos o arquivo dockerfile para criar um script de configuração ao rodar uma imagem.
+
+```bash
+#criando a imagem
+docker run -dti --name ubuntu-python ubuntu
+docker exec -ti ubuntu bash
+nano app.py
+```
+
+```python
+nome = input('qual o seu nome')
+print(nome)
+```
+
+```bash
+#imagem
+FROM ubuntu
+#comandos a rodar
+#atualizar, instalar o python e limpar arquivos temporários
+RUN apt update && apt install -у python3 && apt clean
+#copiar arquivo python
+COPY app.py /opt/app.py
+#executar arquivo
+CMD python3 /opt/app.py
+```
+
+E rodar o dockerfile pelo comando docker build. Com isso, será gerado o script acima de acordo com a imagem criada
+
+```bash
+#rodando o dockerfile na imagem criada
+docker build . -t ubuntu-python
+```
+
+Além disso, conseguimos usar esta imagem como modelo para criar outra:
+
+```bash
+#imagem que criamos com o python instalado
+docker run -ti --name meu-app ubuntu-python
 ```
