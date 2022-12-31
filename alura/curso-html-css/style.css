@@ -160,8 +160,8 @@ footer {
 
 @media screen and (max-width: 480px) {
 	/* largura das seções responsivas */
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
-		width: auto;
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, div .produtos ul {
+		width: auto ;
 	}
 
 	/* alinhar imagem */
@@ -175,9 +175,10 @@ footer {
 	}
 
 	/* deixar li e imagem responsivos */
-	.lista-beneficios, .imagem-beneficios{
+	.lista-beneficios, .imagem-beneficios { 
 		width: 100%;
 	}
+
 }
 
 /* css produtos */

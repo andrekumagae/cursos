@@ -1,0 +1,57 @@
+body{
+    background-color: #f4f0e5;
+}
+
+header{
+    border-bottom: 1px solid #c5b396;
+    width: 600px;
+    margin: 0 auto;
+}
+
+header img{
+    width: 20%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+
+}
+
+header ul{
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+header li{
+    display: inline;
+    margin: 0 10px;
+}
+
+header a{
+    color: #968d79;
+}
+
+section{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.produtos-meio {
+
+    background-color: #de8e37;
+    color: white;
+}
+
+.produtos-meio p{
+    text-align: justify;
+    
+}
+
+span.destaque{
+    font-weight: bold;
+}
