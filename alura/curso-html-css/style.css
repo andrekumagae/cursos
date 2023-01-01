@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 body{
-	font-family: Montserrat;
+	font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -42,7 +42,7 @@ nav a:hover {
 
 footer {
 	text-align: center;
-	background: url("../img/bg.jpg");
+	background: url("img/bg.jpg");
 	padding: 40px 0;
 }
 
@@ -70,7 +70,6 @@ footer {
     font-size: 2em;
     margin: 0 0 1em;
     clear: left;
-	text-shadow: ;
 }
 
 .utensilios {
@@ -150,33 +149,6 @@ footer {
     margin: 2em auto;
 }
 
-@media screen and (max-width: 480px) {
-	/* largura das seções responsivas */
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
-		width: auto;
-	}
-
-	/* alinhar imagem */
-	h1{
-		text-align: center;
-	}
-
-	/* ajustar nav para celular */
-	nav{
-		position: static;
-	}
-
-	/* deixar li e imagem responsivos */
-	.lista-beneficios, .imagem-beneficios, ul.produtos { 
-		width: 100%;
-	}
-
-	ul.produtos li{
-		display: block;
-		width: auto;
-	}
-}
-
 /* css produtos */
 
 .produtos {
@@ -195,6 +167,7 @@ footer {
 	box-sizing: border-box;
 	border: 2px solid #000000;
 	border-radius: 10px;
+	height: auto;
 }
 
 .produtos li:hover {
@@ -216,6 +189,8 @@ footer {
 
 .produto-descricao {
 	font-size: 18px;
+	height: 60px;
+	
 }
 
 .produto-preco {
@@ -253,7 +228,7 @@ form label, form legend {
 }
 
 .enviar {
-	width:40%;
+	width: 50%;
 	padding: 15px 0;
 	background: orange;
 	color: white;
@@ -285,3 +260,39 @@ td, th {
 	padding: 8px 15px;
 }
 
+/* responsividade */
+@media screen and (max-width: 480px) {
+	/* largura das seções responsivas */
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+		width: auto;
+	}
+
+	/* alinhar imagem */
+	h1{
+		text-align: center;
+	}
+
+	/* ajustar nav para celular */
+	nav{
+		position: static;
+	}
+
+	/* deixar li e imagem responsivos */
+	.lista-beneficios, .imagem-beneficios, ul.produtos { 
+		width: 100%;
+	}
+
+	ul.produtos li{
+		display: block;
+		width: auto;
+	}
+
+	.main-form{
+		width: auto;
+		margin-left: 30px;
+	}
+
+	.enviar{
+		width: 50%;
+	}
+}
