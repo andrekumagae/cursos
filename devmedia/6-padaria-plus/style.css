@@ -1,4 +1,5 @@
 body{
+    font-family: 'Sheep Sans', sans-serif;
     background-color: #f4f0e5;
 }
 
@@ -10,7 +11,7 @@ header{
 
 header img{
     width: 20%;
-    display: inline-block;
+    display: block;
     margin: 0 auto;
     text-align: center;
 }
@@ -23,7 +24,6 @@ img {
 header ul{
     list-style: none;
     text-align: center;
-    width: 100%;
 }
 
 header li{
@@ -41,17 +41,40 @@ section{
     text-align: center;
 }
 
+.produtos-topo h1{
+    font-weight: 1000;
+}
+
+.produtos-topo h2{
+    font-weight: normal;
+    color: #d7a072;
+}
+
 .produtos-meio {
 
     background-color: #de8e37;
     color: white;
 }
 
+.produtos-meio h4{
+    font-weight: bold;
+}
+
 .produtos-meio p{
-    text-align: justify;
-    
+    /* text-align: justify; */
+    width: 400px;
+    margin: 0 auto;
+}
+
+.produtos-meio img{
+    margin: 10px 0;
+}
+
+.padaria-contato{
+    width: 600px;
+    margin: 0 auto;
 }
 
 span.destaque{
     font-weight: bold;
-}
+}   
