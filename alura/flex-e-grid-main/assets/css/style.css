@@ -1,19 +1,34 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 
+@font-face{
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
 body{
     background-color: #1D232A;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'icones', sans-serif;
     color: #fff;
 }
 
 .cabecalho{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15191C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
-.cabecalho__menu{
-
+.cabecalho__menu i::before {
+    content: "\e904";
+    font-size: 24px;
 }
 
-.cabecalho__notificacao{
-    
+.cabecalho__notificacao i::before {
+    content: "\e906";
+    font-size: 24px;
+}
+
+.cabecalho__logo{
+    width: 40px;
 }
