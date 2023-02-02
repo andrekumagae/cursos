@@ -11,3 +11,12 @@
         column-gap: 75px;
     }
 }
+
+@media (min-width: 1440px){
+    .menu{
+        column-gap: 105px;
+        flex-wrap: nowrap;
+    }
+
+    
+}
