@@ -1,11 +1,12 @@
 body{
-    font-family: 'Sheep Sans', sans-serif;
+    margin: 0;
+    font-family: Tahoma;
     background-color: #f4f0e5;
 }
 
 header{
     border-bottom: 1px solid #c5b396;
-    width: 600px;
+    width: 700px;
     margin: 0 auto;
 }
 
@@ -31,7 +32,7 @@ header a{
 }
 
 section{
-    width: 600px;
+    width: 700px;
     margin: 0 auto;
     text-align: center;
 }
@@ -66,7 +67,7 @@ section{
 
 .produtos-meio img{
     margin: 10px 0;
-    width: 300px;
+    width: 400px;
 }
 
 .padaria-contato{
