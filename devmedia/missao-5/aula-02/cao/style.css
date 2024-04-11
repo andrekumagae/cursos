@@ -1,0 +1,21 @@
+body {
+margin: 0;
+background-color: aqua;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+p {
+    text-align: justify;
+}

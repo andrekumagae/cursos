@@ -1,0 +1,30 @@
+body{
+    background-color: #250553;
+    text-align: center;
+    margin: 0;
+}
+
+main{
+    width: 800px;
+    margin: 0 auto 40px;
+    color: white;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+h1{
+    margin: 0;
+    background-color: #02021c;
+    width: 100%;
+    color: white;
+}
+
+img{
+    width: 60%;
+}
+
+span{
+    background-color: #b535f6;
+    font-weight: bold;
+    padding: 5px;
+}
