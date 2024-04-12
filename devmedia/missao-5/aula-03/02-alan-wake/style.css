@@ -1,0 +1,49 @@
+body {
+    background-image: url('img1.jpg');
+    color: #fff;
+    margin: 0;
+}
+
+.secao-topo {
+    background-color: #0078f1;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.secao-texto {
+    margin: 0 auto;
+    width: 600px;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.secao-texto span {
+    font-weight: bold;
+}
+
+h1, .secao-reserva span {
+    text-transform: uppercase;
+}
+
+.secao-reserva {
+    border: 1px solid white;
+    margin: 0 auto;
+    width: 350px;
+    padding: 10px 0px 20px;
+    text-align: center;
+}
+
+.secao-reserva a {
+    background-color: white;
+    color: black;
+    padding:  5px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
