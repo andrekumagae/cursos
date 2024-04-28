@@ -21,9 +21,16 @@ h1 {
 }
 
 .espacamento {
-    width: 1024px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px;
     margin: 0 auto;
-    padding: 15px 0;
+    
+}
+
+.area {
+    width: calc(100% - 70px);
+    margin: 20px 35px;
 }
 
 .espacamento p {
