@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    background-color: #23b4eb;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.links a {
+    color: white;
+}
+
+.links li {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.area {
+    margin: 0 auto;
+    min-width: 340px;
+    max-width: 1024px;
+}
+
+.area h2, .area p, .area ul {
+    margin: 20px auto;
+}
+
+.area li {
+    list-style: none;
+    display: inline;
+}
+
+.area a {
+    color: white;
+    background-color: #23b4eb;
+    margin-top: 15px;
+    padding: 10px;
+}
