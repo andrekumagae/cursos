@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.topo {
+    background-color: #cf010b;
+    text-align: center;
+    height: 48px;
+}
+
+.links {
+    padding: 14px 0;
+}
+
+.links li {
+    display: inline;
+    padding: 0 12px;
+}
+
+.links a {
+    font-size: 18px;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.home-imagem {
+    width: 100%;
+    padding: 20px;
+    background-color: #a30109;
+    box-sizing: border-box;
+}
+
+.area {
+    width: 100%;
+    padding: 0 20px 50px 20px;
+    box-sizing: border-box;
+}
+
+h2, h3 p, a {
+    padding: 0 12px;
+}
+
+.area p {
+    line-height: 25px;
+margin: 12px 0px;
+}
+
+.area h2 {
+    margin: 15px 0;
+}
+
+.area h3 {
+    margin: 12px 0;
+}
+
+.area img {
+    background-color: #a30109;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contato p {
+    height: 40px;
+}
+
+.area li {
+    list-style: none;
+    display: inline;
+}
+
+.area a {
+    background-color: #cf010b;
+    color: white;
+    padding: 10px;
+}
