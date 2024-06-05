@@ -1,0 +1,19 @@
+.texto {
+    color: #ff0000;
+    font-size: 22px;
+}
+.container {
+    position: relative;
+    margin-top: 30px;
+    border: 2px solid;
+    background: #ecececbf;
+    width: 320px;
+    height: 400px;
+    padding: 10px;
+}
+img {
+    width: 100px;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+}
