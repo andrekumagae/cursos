@@ -6,26 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manhattan - Coffee House</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Lato&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Lato&family=Oswald&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div class="topo" id="topo">
-        <img src="assets/logo.png" alt="">
+    <div class="fundo-topo" id="topo">
+        <div class="container-topo">
+            <img src="assets/logo.png" alt="">
             <nav>
                 <a href="#informacoes">INFORMAÇÕES</a>
                 <a href="#contatos">CONTATOS</a>
                 <a href="#horarios">HORÁRIOS</a>
             </nav>
-            
+        </div>
     </div>
-    <div class="container-banner banner-1">
-        <h1>MANHATTAN - COFFEE HOUSE</h1>
-        <img src="" alt="">
+    <div class="paralax banner-1" id="banner">
+        <h1 >MANHATTAN - COFFEE HOUSE</h1>
     </div>
     <div class="container-texto" id="informacoes">
-        <h2>EXPERIMENTE O MELHOR CAFÉ DA CIDADE!</h2>
-        <p>O café não é uma simples bebida que foi preparada por alguém. O café é
+        <h2 >EXPERIMENTE O MELHOR CAFÉ DA CIDADE!</h2>
+        <p >O café não é uma simples bebida que foi preparada por alguém. O café é
             momento e nós mostraremos isso. Frases como “Que tal tomarmos um café?”
             ou até então “Vamos fazer um café?” são demonstrações de que um dos
             momentos que mais reforçam os laços para com o próximo está finalmente
@@ -36,9 +40,8 @@
             e amado Amaro’s Coffe diretamente do nosso cafezal em Minas Gerais. Para
             todos nós, café é coisa séria e merece todo o cuidado.</p>
     </div>
-    <div class="container-banner banner-2">
-        <h3 class="texto-marrom">Um bom café é motivo de alegria!</h3>
-        <img src="" alt="">
+    <div class="paralax banner-2">
+        <h3 class="texto-banners">Um bom café é motivo de alegria!</h3>
     </div>
     <div class="container-texto">
         <h2>O QUE É O CAFÉ MANHATTAN?</h2>
@@ -54,8 +57,8 @@
             da torra, você poderá experimentar diferentes e deliciosos tipos de
             café.</p>
     </div>
-    <div class="container-banner banner-3">
-        <h3 class="texto-marrom">A vida só começa depois do café!</h3>
+    <div class="paralax banner-3">
+        <h3 class="texto-banners">A vida só começa depois do café!</h3>
     </div>
     <div class="container-texto">
         <h2>CONHEÇA O CAFÉ GOURMET MANHATTAN?</h2>
@@ -69,57 +72,65 @@
             Essas variações são consequências dos grãos do tipo Arábica. Tudo isso
             vai depender da torra, quanto mais clara ela for, maior será a acidez.</p>
     </div>
-    <div class="banner-4">
-        <h2 class="texto-marrom">CONTATOS E ENDEREÇO</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1166797096143!2d-43.360893!3d-22.982736499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ed54ec2e1%3A0x4431d262cad1d163!2sAv.%20Ayrton%20Senna%2C%203000%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-003%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1717758425142!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="secao-contatos texto-marrom" id="contatos">
+    <div class="paralax banner-4" id="contatos">
+        <h2>CONTATOS E ENDEREÇO</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1166797096143!2d-43.360893!3d-22.982736499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ed54ec2e1%3A0x4431d262cad1d163!2sAv.%20Ayrton%20Senna%2C%203000%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-003%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1717758425142!5m2!1spt-BR!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="secao-contatos">
             <p>Telefone & Whatsapp: <a href="https://wa.me/+5521999995555">(21) 99999-5555</a></p>
             <p>E-mail: <a href="mailto:contato@manhattan.com.br">contato@manhattan.com.br</a></p>
-            <p><a href="https://maps.app.goo.gl/KTUUVGLzsqogGHok9" target="_blank">Endereço: Av Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro</a></p>
+            <p><a href="https://maps.app.goo.gl/KTUUVGLzsqogGHok9" target="_blank">Endereço: Av Ayrton Senna, 3000 -
+                    Barra da Tijuca - Rio de Janeiro</a></p>
         </div>
     </div>
-    <div class="secao-horarios" id="horarios">
-        <ul>
-            <li>
-                <h3>SEGUNDA</h3>
-                <div></div>
-                <span>FECHADO</span>
-            </li>
-            <li>
-                <h3>TERÇA</h3>
-                <div></div>
-                <span>09:00 - 22:00</span>
-            </li>
-            <li>
-                <h3>QUARTA</h3>
-                <div></div>
-                <span>09:00 - 22:00</span>
-            </li>
-            <li>
-                <h3>QUINTA</h3>
-                <div></div>
-                <span>09:00 - 22:00</span>
-            </li>
-            <li>
-                <h3>SEXTA</h3>
-                <div></div>
-                <span>09:00 - 22:00</span>
-            </li>
-            <li>
-                <h3>SÁBADO</h3>
-                <div></div>
-                <span>09:00 - 22:00</span>
-            </li>
-            <li>
-                <h3>DOMINGO</h3>
-                <div></div>
-                <span>12:00 - 22:00</span>
-            </li>
-        </ul>
+    <div class="paralax banner-5" id="horarios">
+        <h2>HORÁRIOS DE FUNCIONAMENTO</h2>
+        <div>
+            <ul class="container-horarios">
+                <li>
+                    <h3>SEGUNDA</h3>
+                    <div></div>
+                    <span class="texto-marrom">FECHADO</span>
+                </li>
+                <li>
+                    <h3>TERÇA</h3>
+                    <div></div>
+                    <p>09:00 - 22:00</p>
+                </li>
+                <li>
+                    <h3>QUARTA</h3>
+                    <div></div>
+                    <p>09:00 - 22:00</p>
+                </li>
+                <li>
+                    <h3>QUINTA</h3>
+                    <div></div>
+                    <p>09:00 - 22:00</p>
+                </li>
+                <li>
+                    <h3>SEXTA</h3>
+                    <div></div>
+                    <p>09:00 - 22:00</p>
+                </li>
+                <li>
+                    <h3>SÁBADO</h3>
+                    <div></div>
+                    <p>09:00 - 22:00</p>
+                </li>
+                <li>
+                    <h3>DOMINGO</h3>
+                    <div></div>
+                    <p>12:00 - 22:00</p>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="rodape">
         <p>&copy; Manhattan - Coffee House - Todos os direitos reservados</p>
-        <p>Desenvolvido por André Kumagae</p>
+        <p>Desenvolvido por <span>André Kumagae</span></p>
+        <a href="#banner"></a>
     </div>
 </body>
 </html>
