@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --branco: #fff;
+    --branco-2: #f1f3f7;
+    --branco-3: #f6f6f6;
+    --cinza: #a89f9f;
+    --preto: #233032;
+    --azul: #2f86d6;
+    --azul-2: rgba(47, 134, 214, 1);
+}
+
+.topo {
+    /* height: 20vh; */
+    position: relative;
+    
+    padding: 35px 0px;
+}
+
+nav {
+    position: absolute;
+    right: 10%;
+    bottom: 40%;
+}
+
+nav a {
+    margin: 0 10px;
+}
+
+.topo p,
+.topo a {
+    color: var(--preto);
+    font-weight: 600;
+}
+
+.topo a {
+    text-decoration: none;
+
+}
+
+.banner-topo {
+    max-width: 320px;
+    /* margin: 0 auto; */
+    position: relative;
+    height: 100px;
+}
+
+.banner-topo img {
+    width: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-topo h2 {
+    position: relative;
+    top: 0;
+    left: 80px;
+}
+
+.banner-topo p {
+    color: var(--azul);
+    position: absolute;
+    top: 40px;
+    left: 80px;
+}
+
+.largura {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.secao-informacoes {
+    font-weight: 600;
+    padding: 100px 0px;
+}
+
+.secao-informacoes h2 {
+    width: 900px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.secao-informacoes p {
+    font-weight: normal;
+}
+
+
+.card-informacoes {
+    width: 33%;
+    display: inline-block;
+}
+
+.conteudo-informacoes img {
+    width: 100px;
+}
+
+.secao-anuncio-1 {
+    background-color: var(--preto);
+    color: var(--branco);
+    /* height: 20vh; */
+    padding: 40px 0px;
+    position: relative;
+}
+
+
+.paragrafo-anuncio {
+    width: 600px;
+}
+
+.cor-anuncio-1 {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.secao-anuncio-1 a {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    right: 20%;
+    bottom: 30%;
+    background-color: var(--azul);
+}
+
+.link-precos::before {
+    content: url('../assets/icone-foguete.png');
+    margin-right: 10px;
+  }
+
+/* .icone-botoes {
+    position: abs;
+    top: 40%;
+    left: 0;
+
+}
+
+.link-precos {
+    margin: 5px;
+    position: relative;
+    right: 0;
+} */
+
+.secao-banner-1 {
+    background-color: var(--azul);
+    color: var(--branco);
+    /* position: relative; */
+    /* height: 60vh; */
+    margin: 0 auto;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+
+    padding: 120px 0px 160px;
+}
+
+.conteudo-banner-1 p {
+    width: 470px;
+
+}
+
+.conteudo-banner-1 {
+    margin: 0 auto;
+    position: relative;
+}
+
+.conteudo-banner-1 p,
+.conteudo-banner-1 h2 {
+   width: 470px;
+   padding: 10px 0;
+}
+
+.conteudo-banner-1 img {
+    position: absolute;
+    right: 0;
+    bottom: -80%;
+    /* display: inline;
+    position: absolute;
+    top: 0;
+    right: 0; */
+
+    width: 50%;
+}
+
+.texto-destaque {
+    color: var(--azul);
+}
+
+.secao-planos {
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--branco-2);
+    padding: 100px 0px;
+}
+
+.secao-planos p {
+    font-weight: normal;
+}
+
+.tabela-planos {
+    background-color: var(--branco);
+    text-align: center;
+    margin: 80px auto 40px;
+    box-shadow: 0px 0px 10px 10px rgba(47, 134, 214, 1);
+}
+
+.tabela-planos img {
+    width: 200px;
+}
+
+td {
+    padding: 10px;
+}
+
+.indicacao-uso {
+    color: var(--cinza);
+    font-weight: normal;
+}
+
+.tabela-destaque {
+    background-color: var(--branco-2);
+}
+
+.secao-anuncio-2 {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 40px 0px;
+    position: relative;
+}
+
+.cor-anuncio-2 a {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.secao-anuncio-2 a {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    right: 20%;
+    bottom: 30%;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.banner-contatos {
+    text-align: center;
+    font-weight: bold;
+    padding: 100px 0px 70px;
+}
+
+.secao-contatos p {
+    line-height: 35px;
+}
+
+.logo-contatos {
+    max-width: 320px;
+    margin: auto;
+    position: relative;
+}
+
+.logo-contatos img {
+    width: 70px;
+    position: absolute;
+    top: -70px;
+    left: 0;
+}
+
+.logo-contatos h2 {
+    position: absolute;
+    top: -70px;
+    left: 30%;
+}
+
+.logo-contatos p {
+    color: var(--azul);
+    position: absolute;
+    top: -30px;
+    left: 30%;
+}
+
+.secao-contatos {
+    margin-top: 60px;
+}
+
+footer {
+    background-color: var(--branco-2);
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px;
+    font-weight: bold;
+}
+
+footer span {
+    color: var(--azul);
+
+}

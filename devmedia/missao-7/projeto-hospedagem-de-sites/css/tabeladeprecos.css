@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+    --branco: #fff;
+    --branco-2: #f1f3f7;
+    --branco-3: #f6f6f6;
+    --cinza: #a8a4a4;
+    --preto: #233032;
+    --azul: #2f86d6;
+}
+
+.largura {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.fundo-topo {
+    background-color: var(--azul);
+}
+
+.topo {
+    /* height: 20vh; */
+    position: relative;
+    
+    padding: 35px 0px;
+}
+
+.banner-topo {
+    max-width: 320px;
+    /* margin: 0 auto; */
+    position: relative;
+    height: 100px;
+}
+
+.banner-topo img {
+    width: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-topo h2 {
+    position: relative;
+    top: 0;
+    left: 80px;
+}
+
+.banner-topo p {
+    color: var(--azul);
+    position: absolute;
+    top: 40px;
+    left: 80px;
+}
+
+nav {
+    position: absolute;
+    right: 10%;
+    bottom: 40%;
+}
+
+nav a {
+    margin: 0 10px;
+}
+
+.topo p,
+.topo a {
+    color: var(--branco);
+    font-weight: 600;
+}
+
+.topo a {
+    text-decoration: none;
+
+}
+
+.secao-preco {
+    /* height: 70vh; */
+    margin: 0 auto;
+    width: 1024px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bola-azul  {
+    border-radius: 50%;
+    display: inline-block;
+    width: 10px;
+
+    height: 10px;
+    font-size: 18px;
+    background-color: var(--azul);
+}
+
+
+thead,
+tbody,
+tr,
+td {
+    text-align: center;
+}
+
+th:nth-child(1) {
+    background-color: var(--branco);
+}
+
+th {
+    padding: 10px 60px;
+    background-color: var(--branco-2);
+}
+
+.tabela-precos p {
+    color: var(--cinza);
+    font-weight: 500;
+}
+
+.tabela-precos h2 {
+    color: var(--preto);
+}
+
+.tabela-destaque {
+    background-color: var(--branco-2);
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 40px 10px 30px;
+}
+
+td {
+    color: var(--preto);
+}
+
+.secao-rodape {
+    background-color: var(--azul);
+    text-align: center;
+    color: white;
+    padding: 100px 0px 70px;
+}
+
+.secao-rodape>p {
+    margin-top: 60px;
+}
+
+.banner-contatos {
+    max-width: 320px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+}
+
+.banner-contatos img {
+    width: 70px;
+    position: absolute;
+    top: -70px;
+    left: 0;
+}
+
+.banner-contatos h2 {
+    position: absolute;
+    top: -70px;
+    left: 30%;
+}
+
+.banner-contatos p {
+    position: absolute;
+    top: -30px;
+    left: 30%;
+}
+
+footer {
+    background-color: var(--branco-2);
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px;
+    font-weight: bold;
+}
+
+footer span {
+    color: var(--azul);
+
+}
