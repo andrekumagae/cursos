@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black-font: #484847;
+    --blue-font: #7f92cd;
+    --source-sans: 'Source Sans Pro', sans-serif;
+    --green-line: #477c76;
+}
+
+body {
+    font-family: var(--source-sans);
+}
+
+.largura-conteudo {
+    width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: lightcyan;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+
+
+nav {
+    padding: 20px;
+}
+
+nav a {
+    margin: auto 10px; 
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav a, .banner a {
+    color: var(--black-font);
+}
+
+.banner, nav {
+    position: relative;
+}
+
+.banner {
+    top: 0;
+    left: 50px;
+}
+
+.banner a {
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.banner span {
+    color: var(--blue-font);
+}
+
+.secao-topo {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.fundo-slogan {
+    background-image: url('assets/img-fundo.jpg');
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-slogan {
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    color: #fff;
+    background-color: rgba(41, 140, 82, 0.566);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo-banner {
+    color: #fff;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.secao-slogan p {
+    font-size: 25px;
+}
+
+.secao-bem-vindos {
+    margin: auto;
+    width: 1024px;
+    color: var(--black-font);
+    text-align: center;
+    line-height: 3em;
+
+}
+
+.titulo-secoes {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--black-font);
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.paragrafo-secoes {
+    margin: 0 auto 20px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.secao-bem-vindos img, .secao-imagens img {
+    width: 300px;
+    margin: 30px auto;
+}
+
+.fotos-quartos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.links-quadros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-imagens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-imagens img {
+    width: 100px;
+    height: 100px;
+}
+
+.card-texto {
+    justify-content: space-evenly;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    width: 300px;
+}
+
+.card-imagem {
+    width: 500px;
+    display: flex;
+}
+
+.card-fotos a {
+    text-decoration: none;
+    color: var(--black-font);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.linha-verde {
+    border-bottom: 2px solid var(--green-line);
+}
+
+.card-fotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+iframe {
+    margin: 20px auto;
+}
+
+footer {
+    background-color: #49997c;
+    color: #fff;
+
+}
+
+.secao-footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #7f92cd;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+}
