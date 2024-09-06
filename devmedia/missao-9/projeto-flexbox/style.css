@@ -120,7 +120,7 @@ nav a, .banner a {
     font-size: 30px;
     color: var(--black-font);
     text-align: center;
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 20px;
 }
 
@@ -138,7 +138,7 @@ nav a, .banner a {
 .fotos-quartos {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .links-quadros {
@@ -242,14 +242,27 @@ footer img {
     padding-bottom: 20px;
 }
 
-.informacoes-quarto span {
+.informacoes-quarto {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.titulo-quartos {
     font-weight: bold;
     display: block;
+    margin-bottom: 30px;
 }
 
 .informacoes-quarto ul {
     display: flex;
     flex-direction: column;
-    height: 100px;
+    align-items: flex-start;
     flex-wrap: wrap;
+    height: 100px;
+    width: 100vw;
+    list-style-position: inside;
 }
+
+
+
