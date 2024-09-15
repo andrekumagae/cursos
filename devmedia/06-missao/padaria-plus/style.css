@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    font-family: Tahoma;
+    background-color: #f4f0e5;
+}
+
+header{
+    border-bottom: 1px solid #c5b396;
+    width: 700px;
+    margin: 0 auto;
+}
+
+header img{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header ul{
+    list-style: none;
+    text-align: center;
+}
+
+header li{
+    display: inline;
+    margin: 0 10px;
+}
+
+header a{
+    color: #968d79;
+}
+
+section{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.produtos-topo h1{
+    font-weight: 1000;
+}
+
+.produtos-topo h2{
+    font-weight: normal;
+    color: #d7a072;
+}
+
+.produtos-meio {
+    background-color: #de8e37;
+    color: white;
+}
+
+.produtos-meio h3{
+    padding-top: 30px;
+}
+
+.produtos-meio h4{
+    font-weight: bold;
+}
+
+.produtos-meio p{
+    line-height: 30px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.produtos-meio img{
+    margin: 10px 0;
+    width: 400px;
+}
+
+.padaria-contato{
+    width: 600px;
+    margin: 0 auto;
+}
+
+span.destaque{
+    font-weight: bold;
+}   
+
+.padaria-contato{
+    text-align: center;
+}
