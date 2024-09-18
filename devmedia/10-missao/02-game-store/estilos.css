@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+}
+
+header, footer {
+    background-color: #5700cb;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.titulo-logo {
+    margin-left: 10px;
+}
+
+.logo-destaque {
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.banner {
+    width: 100%;
+}
+
+.limita-area {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quem-somos p, .mais-vendidos p, table {
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #5a5a5a;
+}
+
+tr {
+    color: white;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #5700cb;
+}
+
+tr:nth-of-type(even) {
+    background-color: #9154e3;
+}
+
+th, td {
+    padding: 5px;
+}
