@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: #ed5a0e;
+}
+
+header, footer {
+    background-color:var(--primary-color);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.logo-destaque {
+    font-weight: bold;
+}
+
+img:first-child {
+    width: 100%;
+}
+
+img {
+    width: 350px;
+}
+
+.quem-somos p:last-child {
+    background-color: var(--primary-color);
+    display: inline;
+    padding: 10px 5px;
+}
+
+.limita-area {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.mais-informacoes {
+    font-weight: bold;
+    border-left: 2px solid var(--primary-color);
+    padding-left: 10px;
+}
+
+.jogos-avaliados {
+    width: 100%;
+    display: flex;
+    margin: 25px 0px;
+    overflow-x: scroll;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+}
+
+figcaption, figure span {
+    margin: 12px 0;
+    padding: 12px 5px;
+    text-align: center;
+    background: #ed5a0e;
+}
+
+p {
+    line-height: 32px;
+}
