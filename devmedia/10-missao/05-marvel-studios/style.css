@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: #e62429;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    padding: 10px 0;
+}
+
+section {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 32px 0;
+}
+
+.destaque {
+    display: flex;
+    margin: 32px 0 0 0;
+}
+
+figure {
+    width: calc((100% / 3) - 3px);
+    margin: 0 3px;
+}
+
+img {
+    width: 100%;
+}
+
+figure::after {
+    content: "Propriedade da Marvel™";
+    width: 100%;
+    height: 32px;
+    color: #fff;
+    background: #e62429;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 25px 0;
+    /* text-align: left; */
+    line-height: 32px;
+}
+
+ul {
+    list-style: none;
+    line-height: 32px;
+}
+
+li, a {
+    display: flex;
+    align-items: center;
+}
+
+a::before {
+    content: "";
+    width: 20px;
+    height: 20px;   
+    background-image: url("https://www.devmedia.com.br/arquivos/cursos/css_pseudos/aula6/img/link.png");
+    margin: 0 6px 0 0;
+}
