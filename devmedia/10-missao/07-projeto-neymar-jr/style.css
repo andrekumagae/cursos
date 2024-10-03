@@ -1,8 +1,76 @@
-table, tr, td, th {
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+:root {
+    --br-gradient: linear-gradient(#ffdf00, #009c3b);
+    --soft-black: #000000cc;
+    --transparent: #0200006e;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+}
+
+.foto-ney {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.container-info {
+    width: 768px;
+    margin-top: 40px;
+}
+
+.container-info div {
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--transparent);
+    gap: 20px;
+    text-align: center;
+}
+
+.secao-estatisticas {
+    width: 100%;
+    height: 100vh;
+}
+
+.titulo-estatisticas {
+    margin-bottom: 40px;
+}
+
+table,
+tr,
+td,
+th {
     border: 1px solid black;
     text-align: center;
 }
 
-tr, td, th { 
-    padding: 5px;
+tr,
+td,
+th {
+    padding: 20px;
+}
+
+tr:nth-of-type(odd) {
+    background-color: var(--soft-black);
+    color: #fff;
+}
+
+tr:nth-of-type(even) {
+    background-color: var(#fff);
+    color: #000;
 }
