@@ -1,0 +1,22 @@
+TEXTO DA SEÇÃO BANNER
+
+<titulo> Neymar Jr
+
+<link> Siga meu canal no YouTube
+<link> Me siga no Instagram
+<link> Me siga no Twitter
+<link> Me siga no Facebook
+<link> Me siga na Twitch
+
+
+TEXTO DA SEÇÃO ESTATÍSTICAS
+
+<subtitulo> Estatísiticas
+
+<tabela>
+Times -> Brasil / Santos / Barcelona / PSG / Al-Hilal
+Temporadas -> 13 / 5 / 4 / 6 / 1
+Jogos -> 124 / 230 / 186 / 173 / 0
+Gols -> 77 / 138 / 105 / 118 / 0 
+Assistências -> 77 / 77 / 77 / 77 / 77
+Títulos -> 2 / 6 / 8 / 13 / 0
