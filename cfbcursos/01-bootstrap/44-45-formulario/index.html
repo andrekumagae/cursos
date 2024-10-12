@@ -14,18 +14,27 @@
 </head>
 
 <body>
-  <form class="p-3">
+  <form class="p-3 was-validated">
     <div class="my-3">
       <label class="form-label">Nome:</label>
-      <input class="form-control" type="text" name="f_nome" />
+      <div class="input-group">
+        <span class="input-group-text">Nome</span>
+        <input class="form-control" type="text" name="f_nome" required />
+        <div class="invalid-feedback">Campo obrigatório</div>
+      </div>
     </div>
     <div class="my-3">
-      <label class="form-label">E-mail:</label>
-        <input class="form-control" type="email" name="f_email" />
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="email" id="email-id" name="f_email" placeholder="Digite o e-mail" name="f_email" required/>
+        <div class="invalid-feedback">Campo obrigatório</div>
+        <!-- label tem q ficar embaixo -->
+        <label class="form-label">E-mail:</label>
+      </div>
     </div>
     <div class="my-3">
       <label class="form-label">Senha:</label>
-      <input class="form-control" type="password" name="f_senha" />
+      <input class="form-control" type="password" name="f_senha" required/>
+      <div class="invalid-feedback">Campo obrigatório</div>
     </div>
     <div class="my-3">
       <label class="form-label">Selecione uma cor:</label>
@@ -34,13 +43,48 @@
     <div class="row">
       <div class="col my-3">
         <label class="form-label">Telefone:</label>
-        <input class="form-control" type="text" name="f_fone" />
+        <input class="form-control" type="text" name="f_fone" required/>
+        <div class="invalid-feedback">Campo obrigatório</div>
       </div>
       <div class="col my-3">
         <label class="form-label">Data de nascimento:</label>
         <input class="form-control" type="date" name="f_nasc" />
       </div>
     </div>
+    <div class="my-3">
+      <label class="form-label">Transporte:</label>
+      <select class="form-select" name="f_transporte">
+        <option value="1">Carro</option>
+        <option value="2">Moto</option>
+        <option value="3">Avião</option>
+        <option value="4">Trem</option>
+        <option value="5">Navio</option>
+      </select>
+    </div>
+
+    <div class="my-3">
+      <label class="form-label">Selecione o(s) meio(s) de deslocamento:</label>
+      <div>
+        <input class="form-check-input" type="checkbox" name="chk_terrestre" id="terrestre">
+        <label class="form-check-label" for="">Terrestre</label>
+      </div>
+      <div>
+        <input class="form-check-input" type="checkbox" name="chk_aereo" id="aereo">
+        <label class="form-check-label" for="">Aéreo</label>
+      </div>
+      <div>
+        <input class="form-check-input" type="checkbox" name="chk_maritimo" id="maritimo">
+        <label class="form-check-label" for="">Marítimo</label>
+      </div>
+    </div>
+
+
+    <div class="my-3">
+      <label class="form-label" for="range">Distância máxima:</label>
+      <input class="form-range" type="range" name="f_range" id="range" min="0" max="100">
+    </div>
+
+
     <input class="btn btn-primary" type="submit" name="btn_enviar" value="Enviar">
   </form>
 
