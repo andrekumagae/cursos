@@ -1,4 +1,4 @@
-# Curso Completo de SQL com SQL Server para Iniciantes do Básico ao Avançado
+# Curso Completo de SQL com SQL Server para Iniciantes do Básico ao Avançado - Bóson Treinamentos
 
 ## Link Youtube
 
@@ -6,35 +6,35 @@
 
 ## Status do curso
 
-- [x] Abertura
-- [x] Instalação do SQL Server
-- [x] Criar Bancos de Dados
-- [x] Constraints
-- [x] Criar Tabelas
-- [x] Alterar e Excluir Tabelas
-- [x] Inserir Registros
-- [x] Consultas Simples (SELECT FROM)
-- [ ] Ordenação de Resultados
-- [ ] SELECT TOP
-- [ ] Filtros com WHERE
-- [ ] Excluir Registros (DELETE)
-- [ ] Limpar Tabelas (TRUNCATE)
-- [ ] Atualizar Tabelas (UPDATE)
-- [ ] Aliases com AS
-- [ ] Operadores Lógicos
-- [ ] Operador UNION
-- [ ] Funções de Agregação
-- [ ] Operador LIKE
-- [ ] Backup e Restauração de BD
-- [ ] Cláusula INNER JOIN
-- [ ] Exercícios com INNER JOIN
-- [ ] OUTER JOINS
-- [ ] Exibições (Views)
-- [ ] Subconsultas (Subqueries)
-- [ ] Procedimentos Armazenados
-- [ ] Triggers (Gatilhos)
-- [ ] Funções UDF
-- [ ] Funções de Data e Hora
-- [ ] Manipulação de Strings
-- [ ] Índices
-- [ ] Encerramento
+~~Abertura~~
+~~Instalação do SQL Server~~
+~~Criar Bancos de Dados~~
+~~Constraints~~
+~~Criar Tabelas~~
+~~Alterar e Excluir Tabelas~~
+~~Inserir Registros~~
+~~Consultas Simples (SELECT FROM)~~
+~~Ordenação de Resultados~~
+SELECT TOP
+Filtros com WHERE
+Excluir Registros (DELETE)
+Limpar Tabelas (TRUNCATE)
+Atualizar Tabelas (UPDATE)
+Aliases com AS
+Operadores Lógicos
+Operador UNION
+Funções de Agregação
+Operador LIKE
+Backup e Restauração de BD
+Cláusula INNER JOIN
+Exercícios com INNER JOIN
+OUTER JOINS
+Exibições (Views)
+Subconsultas (Subqueries)
+Procedimentos Armazenados
+Triggers (Gatilhos)
+Funções UDF
+Funções de Data e Hora
+Manipulação de Strings
+Índices
+Encerramento
