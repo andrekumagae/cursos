@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #00cad1;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+thead {
+    background-color: #00cad1;
+    color: #fff;
+}
+
+tbody td {
+    padding: 20px 0;
+}
+
+tbody tr:nth-child(odd) {
+    background-color:#cdcdcd;
+}
+
+tbody tr:nth-child(even) {
+    background-color:#f1f1f1;
+}
+
+footer {
+    background-color: #0c6e71;
+    color: #fff;
+}
