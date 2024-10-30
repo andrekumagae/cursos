@@ -2,19 +2,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro';
+}
+
+.largura {
+    width: 1024px;
 }
 
 header {
     background-color: #00cad1;
+    display: flex;
+    justify-content: center;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     padding: 0 10px;
+    font-size: 20px;
 }
 
+nav a:hover {
+    color: #000;
+    backgro
+}
+
+main {
+    color: #0000008c;
+}
+
+.titulo-fundo {
+    width: 100%;
+    height: 50vh;    
+    background-image: url('assets/recepcao.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
+    color: #fff;
+    font-weight: 100;
+}
+
+.titulo-fundo h1 {
+    margin: 0 auto;
+}
 
 /* especialidades.html */
 
@@ -43,4 +79,20 @@ tbody tr:nth-child(even) {
 footer {
     background-color: #0c6e71;
     color: #fff;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.rodape {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rodape img {
+    width: 218px;
+    margin: 0px;
+}
+
+.rodape p {
+    padding: 10px 0;
 }
