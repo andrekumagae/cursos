@@ -28,7 +28,7 @@
 - [x] Group By, agrupando colunas na consulta SQL - Curso de SQL - Aula 20
 - [x] Having, filtrando registros agrupados - Curso de SQL - Aula 21
 - [x] Order By, ordenando os registros - Curso de SQL - Aula 22
-- [ ] IS NULL vs IS NOT NULL - Curso de SQL - Aula 23
+- [x] IS NULL vs IS NOT NULL - Curso de SQL - Aula 23
 - [ ] Operadores AND, OR e NOT - Curso de SQL - Aula 24
 - [ ] TOP vs LIMIT - Curso de SQL - Aula 25
 - [ ] Funções MAX e MIN - Curso de SQL - Aula 26
