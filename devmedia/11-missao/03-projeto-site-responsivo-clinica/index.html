@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMLife - Home</title>
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap
     ">
+
     <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon">
 </head>
 
@@ -28,37 +30,48 @@
     <main>
         <section class="titulo-fundo">
             <div class="largura">
-                <h1>Clínica Médica Life</h1>
-                <h1>Aqui a gente cuida de você</h1>
+                <h2 class="titulo-banner">Clínica Médica Life</h2>
+                <h1 class="titulo-banner">Aqui a gente cuida de você</h1>
             </div>
         </section>
 
         <section id="sobre">
-            <article>
+            <article class="largura artigo-sobre">
                 <h2>Sobre a clínica</h2>
                 <p>Nossa clínica está pronta para receber nossos pacientes através de uma excelente estrutura,
                     comodidade e com a segurança de que você precisam.</p>
-                <img src="assets/medico.jpg" alt="">
             </article>
-            <article>
-                <h2>Aqui na nossa clínica você vai encontrar:</h2>
-                <ul>
-                    <li>Horário flexível. Atendemos de segunda à sábado.</li>
-                    <li>Estacionamento amplo com 600 vagas.</li>
-                    <li>Sala de espera com TV e Wifi.</li>
-                    <li>Agendamento pelo telefone ou WhatsApp.</li>
-                    <li>Excelente localização.</li>
-                    <li>Entrega de exames em sua residência</li>
-                </ul>
+            <article class="largura beneficios">
+                <img src="assets/medico.jpg" alt="">
+                <div class="beneficios-lista">
+                    <h2>Aqui na nossa clínica você vai encontrar:</h2>
+                    <ul>
+                        <li>Horário flexível. Atendemos de segunda à sábado.</li>
+                        <li>Estacionamento amplo com 600 vagas.</li>
+                        <li>Sala de espera com TV e Wifi.</li>
+                        <li>Agendamento pelo telefone ou WhatsApp.</li>
+                        <li>Excelente localização.</li>
+                        <li>Entrega de exames em sua residência</li>
+                    </ul>
+                </div>
             </article>
             <article>
                 <h2>Uma clínica de multiespecialidade</h2>
                 <p>Nossa clínica possui diversas especialidades. Como ortopedia, pediatra, geriatria, psicologia,
                     fisioterapia e outros.</p>
-                <figure>
-                    <img src="assets/ortopedia1.png" alt="">
-                    <img src="assets/pediatra.png" alt="">
-                    <img src="assets/geriatra.png" alt="">
+                <figure class="container-imagem largura">
+                    <div class="imagem-especialidade">
+                        <img src="assets/ortopedia1.png" alt="">
+                        <figcaption>ORTOPEDIA</figcaption>
+                    </div>
+                    <div class="imagem-especialidade">
+                        <img src="assets/pediatra.png" alt="">
+                        <figcaption>PEDIATRIA</figcaption>
+                    </div>
+                    <div class="imagem-especialidade">
+                        <img src="assets/geriatra.png" alt="">
+                        <figcaption>GERIATRIA</figcaption>
+                    </div>
                 </figure>
                 <a href="especialidades.html#horarios">Ver horários</a>
             </article>

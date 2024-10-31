@@ -2,7 +2,7 @@
 
 ## Link Youtube
 
-<a href="https://www.youtube.com/playlist?list=PLx4x_zx8csUgQUjExcssR3utb3JIX6Kra" target="_blank">Link da playlist do curso</a>
+[Link da playlist do curso](https://www.youtube.com/playlist?list=PLx4x_zx8csUgQUjExcssR3utb3JIX6Kra)
 
 ## Status do curso
 

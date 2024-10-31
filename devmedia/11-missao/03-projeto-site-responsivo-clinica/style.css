@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro';
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: "Source Sans 3", sans-serif; */
 }
 
 .largura {
@@ -44,12 +48,63 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: center;
-    color: #fff;
     font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-banner {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 .titulo-fundo h1 {
     margin: 0 auto;
+}
+
+.artigo-sobre {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.artigo-sobre p {
+    margin: 15px auto;
+}
+
+.beneficios {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.beneficios-lista h2 {
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.container-imagem {
+    display: flex;
+    margin: 10px auto;
+}
+
+.imagem-especialidade {
+    width: 480px;
+    border: 1px solid black;
+    margin: auto 10px;
+}
+
+.container-imagem img {
+    width: 100%;
+}
+
+.container-imagem figcaption {
+    text-align: center;
+    padding: 10px;
 }
 
 /* especialidades.html */
