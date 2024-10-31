@@ -16,7 +16,7 @@
 - [x] Consultas Simples (SELECT FROM)
 - [x] Ordenação de Resultados
 - [x] SELECT TOP
-- [ ] Filtros com WHERE
+- [x] Filtros com WHERE
 - [ ] Excluir Registros (DELETE)
 - [ ] Limpar Tabelas (TRUNCATE)
 - [ ] Atualizar Tabelas (UPDATE)
