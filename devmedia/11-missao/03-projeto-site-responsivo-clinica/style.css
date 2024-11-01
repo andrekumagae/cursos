@@ -13,6 +13,11 @@ body {
     width: 1024px;
 }
 
+.centralizar {
+    margin: 0 auto;
+    text-align: center;
+}
+
 header {
     background-color: #00cad1;
     display: flex;
@@ -89,7 +94,7 @@ main {
 
 .container-imagem {
     display: flex;
-    margin: 10px auto;
+    margin: 10px auto 40px;
 }
 
 .imagem-especialidade {
@@ -107,11 +112,47 @@ main {
     padding: 10px;
 }
 
+.botao-horarios {
+    background-color: #00ccd3;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+
+}
+
+iframe {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 /* especialidades.html */
 
 .link-especialidades a {
     color: black;
     border-bottom: 2px solid #0c6e71;
+}
+
+.link-especialidades a:hover {
+    color: #00cad1;
+    border-bottom: 2px solid black;
+}
+
+.margens-texto {
+    margin: 20px auto;
+}
+
+.flex-tabelas {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.flex-tabelas img {
+    width: 50%;
+    height: 350px;
+}
+
+.flex-tabelas table {
+    width: 50%;
 }
 
 thead {
@@ -120,7 +161,7 @@ thead {
 }
 
 tbody td {
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 tbody tr:nth-child(odd) {
