@@ -29,10 +29,10 @@
 - [x] Having, filtrando registros agrupados - Curso de SQL - Aula 21
 - [x] Order By, ordenando os registros - Curso de SQL - Aula 22
 - [x] IS NULL vs IS NOT NULL - Curso de SQL - Aula 23
-- [ ] Operadores AND, OR e NOT - Curso de SQL - Aula 24
-- [ ] TOP vs LIMIT - Curso de SQL - Aula 25
-- [ ] Funções MAX e MIN - Curso de SQL - Aula 26
-- [ ] Funções round, count, sum e avg - Curso de SQL - Aula 27
+- [x] Operadores AND, OR e NOT - Curso de SQL - Aula 24
+- [x] TOP vs LIMIT - Curso de SQL - Aula 25
+- [x] Funções MAX e MIN - Curso de SQL - Aula 26
+- [x] Funções round, count, sum e avg - Curso de SQL - Aula 27
 - [ ] Operador LIKE - Curso de SQL - Aula 28
 - [ ] Operador IN - Curso de SQL - Aula 29
 - [ ] Como usar o Operador BETWEEN - Curso de SQL - Aula 30
