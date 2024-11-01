@@ -17,7 +17,7 @@
 - [x] Ordenação de Resultados
 - [x] SELECT TOP
 - [x] Filtros com WHERE
-- [ ] Excluir Registros (DELETE)
+- [x] Excluir Registros (DELETE)
 - [ ] Limpar Tabelas (TRUNCATE)
 - [ ] Atualizar Tabelas (UPDATE)
 - [ ] Aliases com AS
