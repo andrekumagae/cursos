@@ -33,9 +33,9 @@
 - [x] TOP vs LIMIT - Curso de SQL - Aula 25
 - [x] Funções MAX e MIN - Curso de SQL - Aula 26
 - [x] Funções round, count, sum e avg - Curso de SQL - Aula 27
-- [ ] Operador LIKE - Curso de SQL - Aula 28
-- [ ] Operador IN - Curso de SQL - Aula 29
-- [ ] Como usar o Operador BETWEEN - Curso de SQL - Aula 30
+- [x] Operador LIKE - Curso de SQL - Aula 28
+- [x] Operador IN - Curso de SQL - Aula 29
+- [x] Como usar o Operador BETWEEN - Curso de SQL - Aula 30
 - [ ] Tipos de JOIN do SQL - Curso de SQL - Aula 31
 - [ ] Ligando uma tabela a ela mesma (Self Join) - Curso de SQL - Aula 32
 - [ ] Como usar o operador UNION - Curso de SQL - Aula 33

@@ -18,9 +18,9 @@
 - [x] SELECT TOP
 - [x] Filtros com WHERE
 - [x] Excluir Registros (DELETE)
-- [ ] Limpar Tabelas (TRUNCATE)
-- [ ] Atualizar Tabelas (UPDATE)
-- [ ] Aliases com AS
+- [x] Limpar Tabelas (TRUNCATE)
+- [x] Atualizar Tabelas (UPDATE)
+- [x] Aliases com AS
 - [ ] Operadores Lógicos
 - [ ] Operador UNION
 - [ ] Funções de Agregação
