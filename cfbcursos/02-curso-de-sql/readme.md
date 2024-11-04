@@ -36,8 +36,8 @@
 - [x] Operador LIKE - Curso de SQL - Aula 28
 - [x] Operador IN - Curso de SQL - Aula 29
 - [x] Como usar o Operador BETWEEN - Curso de SQL - Aula 30
-- [ ] Tipos de JOIN do SQL - Curso de SQL - Aula 31
-- [ ] Ligando uma tabela a ela mesma (Self Join) - Curso de SQL - Aula 32
+- [x] Tipos de JOIN do SQL - Curso de SQL - Aula 31
+- [x] Ligando uma tabela a ela mesma (Self Join) - Curso de SQL - Aula 32
 - [ ] Como usar o operador UNION - Curso de SQL - Aula 33
 - [ ] Como usar o operador EXISTS - Curso de SQL - Aula 34
 - [ ] Você precisa aprender sobre CASE..WHEN - Curso de SQL - Aula 35
