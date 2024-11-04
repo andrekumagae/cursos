@@ -21,8 +21,8 @@
 - [x] Limpar Tabelas (TRUNCATE)
 - [x] Atualizar Tabelas (UPDATE)
 - [x] Aliases com AS
-- [ ] Operadores Lógicos
-- [ ] Operador UNION
+- [x] Operadores Lógicos
+- [x] Operador UNION
 - [ ] Funções de Agregação
 - [ ] Operador LIKE
 - [ ] Backup e Restauração de BD

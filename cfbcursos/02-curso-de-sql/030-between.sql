@@ -9,3 +9,4 @@ SELECT * FROM cliente c WHERE d_nasc_cliente BETWEEN '2000%-01-01' AND '2010-01-
 SELECT * FROM venda v WHERE 
 (d_data_venda BETWEEN '2020-07-01' 
 AND '2020-11-01') AND i_cliente_cliente NOT IN (3,10) AND f_valor_venda < 10;
+

@@ -192,3 +192,93 @@ footer {
 .rodape p {
     padding: 10px 0;
 }
+
+@media screen and (max-width: 425px) {
+    .largura {
+        width: 100%;
+    }
+
+    .artigo-sobre {
+        margin: auto 10px;
+    }
+
+    .topo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topo nav {
+        border-top: 1px solid black;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titulo-fundo {
+        height: 200px;
+    }
+
+    .titulo-banner {
+        padding-left: 20px;
+    }
+
+  ul {
+    list-style-position: inside;
+  }
+
+    .beneficios img {
+        display: none;
+    }
+
+    .container-imagem {
+        display: block;
+        margin: 0 auto;
+        /* width: 100%; */
+    }
+
+    .imagem-especialidade {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .container-imagem img {
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .topo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .largura {
+        width: 100%;
+    }
+
+    .titulo-fundo {
+        height: 300px;
+    }
+
+    .artigo-sobre {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .largura {
+        width: 100%;
+    }
+
+    .titulo-fundo {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .beneficios img {
+        display: none;
+    }
+}
