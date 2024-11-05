@@ -23,8 +23,8 @@
 - [x] Aliases com AS
 - [x] Operadores Lógicos
 - [x] Operador UNION
-- [ ] Funções de Agregação
-- [ ] Operador LIKE
+- [x] Funções de Agregação
+- [x] Operador LIKE
 - [ ] Backup e Restauração de BD
 - [ ] Cláusula INNER JOIN
 - [ ] Exercícios com INNER JOIN
