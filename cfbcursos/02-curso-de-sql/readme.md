@@ -38,8 +38,8 @@
 - [x] Como usar o Operador BETWEEN - Curso de SQL - Aula 30
 - [x] Tipos de JOIN do SQL - Curso de SQL - Aula 31
 - [x] Ligando uma tabela a ela mesma (Self Join) - Curso de SQL - Aula 32
-- [ ] Como usar o operador UNION - Curso de SQL - Aula 33
-- [ ] Como usar o operador EXISTS - Curso de SQL - Aula 34
+- [x] Como usar o operador UNION - Curso de SQL - Aula 33
+- [x] Como usar o operador EXISTS - Curso de SQL - Aula 34
 - [ ] Você precisa aprender sobre CASE..WHEN - Curso de SQL - Aula 35
 - [ ] Como usar as funções IFNULL, ISNULL e NVL - Curso de SQL - Aula 36
 - [ ] Vamos aprender sobre Stored Procedures #P1 - Curso de SQL - Aula 37
