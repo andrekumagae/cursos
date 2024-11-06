@@ -25,7 +25,7 @@
 - [x] Operador UNION
 - [x] Funções de Agregação
 - [x] Operador LIKE
-- [ ] Backup e Restauração de BD
+- [x] Backup e Restauração de BD
 - [ ] Cláusula INNER JOIN
 - [ ] Exercícios com INNER JOIN
 - [ ] OUTER JOINS
