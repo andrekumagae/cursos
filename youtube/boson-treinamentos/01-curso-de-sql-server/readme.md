@@ -2,7 +2,7 @@
 
 ## Link Youtube
 
-<a href="https://www.youtube.com/watch?v=KOhd3R5kLks" target="_blank">Link do curso</a>
+[![Curso Completo de SQL com SQL Server para Iniciantes do Básico ao Avançado](https://i.ytimg.com/vi/KOhd3R5kLks/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCRVtzA3VJg_mXTHrGQkOnf5JpdUQ)](https://www.youtube.com/results?search_query=Curso+Completo+de+SQL+com+SQL+Server+para+Iniciantes+do+B%C3%A1sico+ao+Avan%C3%A7ado)
 
 ## Status do curso
 
@@ -26,7 +26,7 @@
 - [x] Funções de Agregação
 - [x] Operador LIKE
 - [x] Backup e Restauração de BD
-- [ ] Cláusula INNER JOIN
+- [x] Cláusula INNER JOIN
 - [ ] Exercícios com INNER JOIN
 - [ ] OUTER JOINS
 - [ ] Exibições (Views)
