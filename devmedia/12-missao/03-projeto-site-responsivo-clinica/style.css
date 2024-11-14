@@ -57,6 +57,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .titulo-banner {
@@ -198,14 +199,15 @@ footer {
 @media screen and (max-width: 559px) 
 /* @media screen and (max-width: 425px)  */
 {
+
     .largura {
         width: 100%;
     }
 
-    .margem-lateral {
+    /* .margem-lateral {
         margin: 0 10px;
 
-    }
+    } */
 
     .artigo-sobre {
         margin: auto 10px;
@@ -280,7 +282,7 @@ footer {
     }
 
     .artigo-sobre {
-        margin: 0 auto;
+        margin: 20px auto;
     }
 
     .beneficios img, .flex-tabelas img {
