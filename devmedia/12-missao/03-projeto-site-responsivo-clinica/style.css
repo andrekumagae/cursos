@@ -195,6 +195,22 @@ footer {
     padding: 10px 0;
 }
 
+@media screen and (max-width: 314px){
+    * {
+        width: 100%;
+    }
+
+    .topo nav {
+        flex-direction: column;
+        justify-content: center;
+        background-color: red;
+    }
+
+    .rodape img {
+        width: 80vw;
+    }
+}
+
 /* mobile */
 @media screen and (max-width: 559px) 
 /* @media screen and (max-width: 425px)  */
