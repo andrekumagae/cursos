@@ -100,7 +100,8 @@ main {
 
 .imagem-especialidade {
     width: 480px;
-    border: 1px solid black;
+    border-color: 1px 1px 1px #000;
+    border-radius: 10px;
     margin: auto 10px;
 }
 
@@ -319,6 +320,7 @@ footer {
 
     .imagem-especialidade {
         width: 300px;
+        
     }
 
     .imagem-especialidade  {
