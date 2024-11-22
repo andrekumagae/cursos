@@ -39,7 +39,6 @@ nav a {
 
 nav a:hover {
     color: #000;
-    backgro
 }
 
 main {
@@ -130,15 +129,22 @@ iframe {
 
 /* especialidades.html */
 
-.link-especialidades a {
+.container-especialidades a {
     color: black;
     border-bottom: 2px solid #0c6e71;
 }
 
-.link-especialidades a:hover {
+.container-especialidades a a:hover {
     color: #00cad1;
     border-bottom: 2px solid black;
 }
+
+.link-especialidade {
+    padding: 30px auto;
+    margin: auto 5px;
+}
+    
+
 
 .margens-texto {
     margin: 20px auto;
@@ -358,3 +364,8 @@ footer {
         justify-content: space-around;
      }
 } 
+
+
+.alinhamento {
+    margin: 0 10px;
+}
