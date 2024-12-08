@@ -9,26 +9,20 @@ body {
 
 .menu {
     background-color: #b0ddfc;
+    text-align: center;
 }
 
 .espacamento {
-    /* padding: 30px auto; */
-    padding-top: 30px;
+    padding-top: 25px;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 
 .paragrafos {
     font-size: 18px;
-    text-align: justify;
     line-height: 28px;
     margin: 10px auto;
     width: 980px;
-}
-
-.menu {
-    margin: 15px auto 25px;
-    text-align: center;
 }
 
 nav a {
@@ -45,7 +39,8 @@ nav a {
 }
 
 h2 {
-    padding-bottom: 30px;
+    margin: 0px;
+    padding-bottom: 25px;
 }
 
 #sobre h1 {
@@ -76,6 +71,7 @@ span {
 }
 
 .subtitulo {
+    margin: 0 auto 25px;
     font-size: 28px;
     line-height: 42px;
 }
@@ -109,6 +105,7 @@ span {
 .contato {
     background-color: #1d80c1;
     color: #ffffff;
+    padding-bottom: 5px;
 }
 
 .paragrafo-contato {
@@ -121,6 +118,7 @@ span {
 
 .contato ul {
     list-style-type: none;
+    margin-bottom: 25px;
 }
 
 .contato a {
