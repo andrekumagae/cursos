@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 
 :root {
@@ -9,6 +10,7 @@
 
 body {
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 .topo {
@@ -166,6 +168,7 @@ body {
     text-align: center;
     font-size: 12px;
     padding: 20px;
+    /* width: 100%; */
 }
 
 .secao-redes-sociais img {
