@@ -39,7 +39,6 @@ nav a {
 
 nav a:hover {
     color: #000;
-    backgro
 }
 
 main {
@@ -100,7 +99,8 @@ main {
 
 .imagem-especialidade {
     width: 480px;
-    border: 1px solid black;
+    border-color: 1px 1px 1px #000;
+    border-radius: 10px;
     margin: auto 10px;
 }
 
@@ -129,15 +129,22 @@ iframe {
 
 /* especialidades.html */
 
-.link-especialidades a {
+.container-especialidades a {
     color: black;
     border-bottom: 2px solid #0c6e71;
 }
 
-.link-especialidades a:hover {
+.container-especialidades a a:hover {
     color: #00cad1;
     border-bottom: 2px solid black;
 }
+
+.link-especialidade {
+    padding: 30px auto;
+    margin: auto 5px;
+}
+    
+
 
 .margens-texto {
     margin: 20px auto;
@@ -193,6 +200,22 @@ footer {
 
 .rodape p {
     padding: 10px 0;
+}
+
+@media screen and (max-width: 314px){
+    * {
+        width: 100%;
+    }
+
+    .topo nav {
+        flex-direction: column;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .rodape img {
+        width: 80vw;
+    }
 }
 
 /* mobile */
@@ -303,6 +326,7 @@ footer {
 
     .imagem-especialidade {
         width: 300px;
+        
     }
 
     .imagem-especialidade  {
@@ -340,3 +364,8 @@ footer {
         justify-content: space-around;
      }
 } 
+
+
+.alinhamento {
+    margin: 0 10px;
+}

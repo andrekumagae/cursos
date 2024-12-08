@@ -27,7 +27,7 @@
 - [x] Operador LIKE
 - [x] Backup e Restauração de BD
 - [x] Cláusula INNER JOIN
-- [ ] Exercícios com INNER JOIN
+- [x] Exercícios com INNER JOIN
 - [ ] OUTER JOINS
 - [ ] Exibições (Views)
 - [ ] Subconsultas (Subqueries)
