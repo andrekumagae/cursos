@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos dos inputs</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        background-color: #8b0600;
+        padding: 20px;
+        color: #fff;
+        font-size: 20px;
+        height: 55px;
+    }
+
+    .largura {
+        width: 500px; 
+        margin: 10px auto;
+    }
+
+    h1 {
+        color: #8b0600;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+   .flex {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            margin: auto;
+            padding: 10px auto 20px;
+            font-size: 20px;
+            height: 100%;
+        }
+
+    label {
+        margin: 10px 0;
+    }
+
+    input, button {
+        height: 30px;
+    }
+
+    button {
+        background-color: #8b0600;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 15px;
+        border: none;
+    }
+
+    footer {
+        text-align: center;
+        color: #8b0600;
+        position: sticky;
+        height: 55px;
+        background-color: #f8f8f8;
+        bottom: 0;
+        padding: 10px;
+    }
+
+    p {
+        line-height: 30px;
+    }
+     
+    </style>
+</head>
+
+<body>
+    <header>
+        Faculdade
+    </header>
+    <div class="largura">
+        <h1>Matrícula</h1>
+        <p>Preencha os campos abaixo para criar a sua matrícula e seu cadastro no ambiente virtual da faculdade.</p>
+    </div>
+    <form action="" class="flex">
+        <label for="">Nome:</label>
+        <input type="text" placeholder="Digite o seu nome completo" required>
+        <label for="">Data de Nascimento:</label>
+        <input type="date" min="1950-12-09" max="2006-12-09" required>
+        <label for="">E-mail:</label>
+        <input type="email" placeholder="exemplo@email.com" required>
+        <label for="">Telefone:</label>
+        <input type="tel" placeholder="(XX)XXXXX-XXXX" min="11" max="11" required>
+        <label for="">Melhor dia para vencimento:</label>
+        <input type="number" placeholder="Valores entre 10 e 20" min="10" max="20" required>
+        <label for="">Login:</label>
+        <input type="text" placeholder="Digite o seu login" minlength="8" maxlength="15" required>
+        <label for="">Senha:</label>
+        <input type="password" placeholder="Digite a sua senha" minlength="8" maxlength="15" required>
+        <button type="submit" value="Enviar Matrícula" >Enviar Matrícula</button>
+    </form>
+    <footer>
+        <p>Copyright 2022 - Faculdade</p>
+    </footer>
+</body>
+
+</html>

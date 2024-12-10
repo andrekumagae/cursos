@@ -46,9 +46,9 @@ body {
 .secao-banner {
     background-image: url('img/banner-topo.jpg');
     background-size: cover;
-    padding: 120px 80px;
     background-position: center;
-    height: 800px;
+    padding: 120px 80px;
+    height: 600px;
     width: 100%;
     /* text-align: center; */
 }
@@ -168,7 +168,7 @@ body {
     text-align: center;
     font-size: 12px;
     padding: 20px;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .secao-redes-sociais img {
@@ -203,3 +203,5 @@ iframe {
     width: 800px;
     height: 450px;
 }
+
+@media screen and (max-width: )
