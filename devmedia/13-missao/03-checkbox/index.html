@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos dos inputs</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        background-color: #7c008b;
+        padding: 20px;
+        color: #fff;
+        font-size: 20px;
+        height: 55px;
+    }
+
+    .largura {
+        width: 500px; 
+        margin: 10px auto;
+    }
+
+    h1 {
+        color: #7c008b;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+   .flex {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            margin: auto;
+            padding: 10px auto 20px;
+            font-size: 20px;
+            height: 100%;
+        }
+
+    /* label {
+        margin: 10px 0;
+    } */
+
+    /* input, button {
+        height: 30px;
+    } */
+
+    button {
+        background-color: #7c008b;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 15px;
+        border: none;
+    }
+
+    footer {
+        text-align: center;
+        color: #7c008b;
+        position: sticky;
+        height: 55px;
+        background-color: #f8f8f8;
+        bottom: 0;
+        padding: 10px;
+    }
+
+    p {
+        /* line-height: 30px; */
+    }
+
+    .checkboxes {
+        line-height: 5px;
+        margin: 0px;
+        padding: 0px;
+    }
+     
+    </style>
+</head>
+
+<body>
+    <header>Questionário</header>
+    <div class="largura">
+        <h1>Questionário</h1>
+        <p>Responda o questionário abaixo marcando as opções que correspondem as suas preferências por jogos.</p>
+    </div>
+    <form action="" class="flex">
+        <p>Quais plataformas de jogos você utiliza?</p>
+            <p class="checkboxes">
+                <input type="checkbox" name="plataformas[]" id="xbox-id" value="xbox">
+                <label for="xbox-id">Xbox</label>
+            </p>
+            <p class="checkboxes">
+                <input type="checkbox" name="plataformas[]" id="ps-id" value="ps">
+                <label for="ps-id">Playstation</label>
+            </p>
+            <p class="checkboxes">
+                <input type="checkbox" name="plataformas[]" id="switch-id" value="switch">
+                <label for="switch-id">Switch</label>
+            </p>
+            <p class="checkboxes">
+                <input type="checkbox" name="plataformas[]" id="stadia-id" value="stadia">
+                <label for="stadia-id">Stadia</label>
+            </p>
+            <p class="checkboxes">
+                <input type="checkbox" name="plataformas[]" id="pc-id" value="pc">
+                <label for="pc-id">PC</label>
+            </p>
+            
+
+        <p>Quais seus gêneros de jogos preferidos? de jogos você utiliza?</p>
+        <p class="checkboxes">
+            <input type="checkbox" name="generos[]" id="acao-id" value="acao">
+            <label for="acao-id">Ação</label>
+        </p>
+        <p class="checkboxes">
+            <input type="checkbox" name="generos[]" id="aventura-id" value="aventura">
+            <label for="aventura-id">Aventura</label>
+        </p>
+        <p class="checkboxes">
+            <input type="checkbox" name="generos[]" id="plataforma-id" value="plataforma">
+            <label for="plataforma-id">Plataforma</label>
+        </p>
+        <p class="checkboxes">
+            <input type="checkbox" name="generos[]" id="rpg-id" value="rpg">
+            <label for="rpg-id">RPG</label>
+        </p>
+        <p class="checkboxes">
+            <input type="checkbox" name="generos[]" id="tiro-id" value="tiro">
+            <label for="tiro-id">Tiro</label>
+        </p>
+        <p class="checkboxes">
+            <input type="checkbox" name="generos[]" id="corrida-id" value="corrida">
+            <label for="corrida-id">Corrida</label>
+        </p>
+        <button type="submit" value="Enviar Matrícula" >Enviar Questionário</button>
+    </form>
+    <footer>
+        <p>Copyright 2022 - Faculdade</p>
+    </footer>
+</body>
+
+</html>
