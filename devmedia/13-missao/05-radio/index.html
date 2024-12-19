@@ -7,36 +7,34 @@
     <title>Atributos dos inputs</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        header {
+            background-color: #0e52a5;
+            padding: 20px;
+            color: #fff;
+            font-size: 20px;
+            height: 55px;
+        }
 
-    body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    header {
-        background-color: #fe7321;
-        padding: 20px;
-        color: #fff;
-        font-size: 20px;
-        height: 55px;
-    }
+        .largura {
+            width: 500px;
+            margin: 10px auto;
+        }
 
-    .largura {
-        width: 500px; 
-        margin: 10px auto;
-    }
+        h1 {
+            color: #0e52a5;
+        }
 
-    h1 {
-        color: #fe7321;
-    }
+        p {
+            font-size: 20px;
+        }
 
-    p {
-        font-size: 20px;
-    }
-
-   .flex {
+        .flex {
             display: flex;
             flex-direction: column;
             width: 500px;
@@ -46,92 +44,90 @@
             height: 100%;
         }
 
-    /* label {
+        /* label {
         margin: 10px 0;
     } */
 
-    /* input, button {
+        /* input, button {
         height: 30px;
     } */
 
-    button {
-        background-color: #fe7321;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: #fff;
-        font-size: 15px;
-        border: none;
-    }
+        button {
+            background-color: #0e52a5;
+            margin-top: 20px;
+            padding: 10px;
+            margin-bottom: 20px;
+            color: #fff;
+            font-size: 15px;
+            border: none;
+        }
 
-    footer {
-        text-align: center;
-        color: #fe7321;
-        position: sticky;
-        height: 55px;
-        background-color: #f8f8f8;
-        bottom: 0;
-        padding: 10px;
-    }
+        footer {
+            text-align: center;
+            color: #0e52a5;
+            position: sticky;
+            height: 55px;
+            background-color: #f8f8f8;
+            bottom: 0;
+            padding: 10px;
+        }
 
-    p {
-        /* line-height: 30px; */
-    }
+        p {
+            /* line-height: 30px; */
+        }
 
-    .checkboxes {
-        line-height: 5px;
-        margin: 0px;
-        padding: 0px;
-    }
-     
+        .checkboxes {
+            line-height: 5px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        label,
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        fieldset {
+            margin: 10px 0;
+        }
     </style>
 </head>
 
 <body>
-    <header>MedCompany</header>
+    <header>Revista</header>
     <div class="largura">
-        <h1>Formulário de exame</h1>
-        <p>Preencha o formulário abaixo com suas informações:</p>
+        <h1>Cadastro</h1>
+        <p>Estamos lançando uma nova revista e enviaremos o primeiro exemplar grátis para todos que se cadastrarem hoje
+            no site.</p>
     </div>
     <form action="" class="flex">
-        <label for="id-nome">Nome</label>
-        <input type="id-text" name="nome">
-        <label for="id-date">Data de Nascimento</label>
-        <input type="id-date" name="nome">
-        <label for="id-email">Email</label>
-        <input type="email" name="nome">
-        <p>Você possui tatuagem?</p>
-            <p class="checkboxes">
-                <input type="radio" name="resposta" value="s">
-                <label for="">Sim</label>
-            </p>
-            <p class="checkboxes">
-            <p class="checkboxes">
-                <input type="radio" name="resposta" value="n" id="">
-                <label for="">Não</label>
-            </p>
-           
+        <fieldset>
+            <legend>Dados de contato</legend>
+            <label for="">Nome:</label>
+            <input type="text" name="" id="">
+            <label for="">Email:</label>
+            <input type="email" name="" id="">
+            <label for="">Telefone:</label>
+            <input type="tel" name="" id="">
+        </fieldset>
 
-            <p>Última vez que doou sangue?</p>
-            <p class="checkboxes">
-                <input type="radio" name="resposta2" value="op1">
-                <label for="">Nos últimos 6 meses.</label>
-            </p>
-            <p class="checkboxes">
-            <p class="checkboxes">
-                <input type="radio" name="resposta2" value="op2" id="">
-                <label for="">Há 1 ano ou mais.</label>
-            </p>
-            <p class="checkboxes">
-                <input type="radio" name="resposta2" value="op3" id="">
-                <label for="">Nunca doei sangue.</label>
-            </p>
+        <fieldset>
+            <legend>Dados de entrega</legend>
+            <label for="">Endereço:</label>
+            <input type="text" name="" id="">
+            <label for="">Número:</label>
+            <input type="text" name="" id="">
+            <label for="">Complemento:</label>
+            <input type="text" name="" id="">
+        </fieldset>
 
 
-
-        <button type="submit" value="Enviar Matrícula" >Enviar Questionário</button>
+        <button type="submit" value="Enviar Matrícula">Cadastrar</button>
     </form>
     <footer>
-        <p>Copyright 2022 - Faculdade</p>
+        <p>Copyright 2022 - Revista</p>
     </footer>
 </body>
 
