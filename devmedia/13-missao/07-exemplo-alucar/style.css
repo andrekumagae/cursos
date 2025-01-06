@@ -3,3 +3,66 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --primary-color: #d92121;
+    --secondary-color: #6c0000;
+}
+
+.largura {
+    width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 10px;
+    font-weight: 500;
+}
+
+header p {
+    font-weight: bold;
+}
+
+.imagem-carro {
+    background-image: url('img/capa.jpg');
+    height: 40vh;
+    background-size: cover;
+}
+
+.texto-imagem {
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    text-align: end;
+    margin: 0 auto;
+    padding: 30px;
+    font-weight: bold;
+}
+
+.sobre-nos p {
+    border-left: 1px solid black;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+.secao-contato {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+
+.secao-contato h1 {
+    color: white;
+    background-color: var(--secondary-color);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.botao {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+footer {
+    color: var(--primary-color);
+}
