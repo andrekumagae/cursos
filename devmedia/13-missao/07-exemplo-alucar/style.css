@@ -56,6 +56,17 @@ header p {
     margin: 10px 0;
 }
 
+fieldset :where(legend, label, input) {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+fieldset input {
+    width: 100%;
+    padding: 10px;
+}
+
 .botao {
     background-color: var(--primary-color);
     color: white;
@@ -65,4 +76,5 @@ header p {
 
 footer {
     color: var(--primary-color);
+    text-align: center;
 }
