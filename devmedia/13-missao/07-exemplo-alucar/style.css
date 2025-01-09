@@ -58,13 +58,15 @@ header p {
 
 fieldset :where(legend, label, input) {
     display: block;
-    margin: 10px 0;
-    text-align: center;
+    margin: 10px 0 5px 20px;
+    /* text-align: center; */
 }
 
 fieldset input {
-    width: 100%;
-    padding: 10px;
+    width: 95%;
+    padding: 5px;
+    margin: 0 auto 20px;
+    box-sizing: border-box;
 }
 
 .botao {
