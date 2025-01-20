@@ -10,7 +10,9 @@
 </head>
 
 <body>
-    <header class="largura"><p>AluCar</p></header>
+    <header class="largura">
+        <p>AluCar</p>
+    </header>
     <section>
         <div class="imagem-carro">
             <div class="texto-imagem">
@@ -21,7 +23,7 @@
             </div>
         </div>
     </section>
-    <section class="largura sobre-nos">
+    <section class="largura texto-secoes">
         <h1>Sobre nós</h1>
         <p>Há 45 anos atuando na área de locação de veículos com segurança e garantia de satisfação. Temos os melhores
             preços e modelos do mercado</p>
@@ -40,44 +42,46 @@
         <h1>Contato</h1>
     </section>
     <section class="largura">
-        <h2>Análise de cadastro</h2>
-        <p>Preencha os campos abaixo e analisaremos seus dados</p>
-        <p>Se tudo estiver correto ligaremos para marcar uma visita sua à loja.</p>
+        <div class="texto-forms">
+            <h2>Análise de cadastro</h2>
+            <p>Preencha os campos abaixo e analisaremos seus dados</p>
+            <p>Se tudo estiver correto ligaremos para marcar uma visita sua à loja.</p>
+        </div>
+        <fieldset class="largura">
+            <legend>Dados pessoais</legend>
+            <label for="">Nome</label>
+            <input type="text" name="" id="" placeholder="Digite seu nome">
+            <label for="">Data de nascimento</label>
+            <input type="date" name="" id="">
+            <label for="">Telefone</label>
+            <input type="tel" name="" id="" placeholder="(XX) XXXX-XXXX">
+        </fieldset>
+        <fieldset class="largura">
+            <legend>CNH</legend>
+            <label for="">Número do registro</label>
+            <input type="number" name="" id="" placeholder="Informe o número da sua CNH">
+            <label for="">Validade</label>
+            <input type="date" name="" id="">
+        </fieldset>
+        <fieldset class="largura">
+            <legend>Carro</legend>
+            <label for="">Modelo do Carro</label>
+            <select name="car-model" id="car-model">
+                <optgroup label="Nissan">
+                    <option value="1">Sedan</option>
+                    <option value="2">SUV</option>
+                    <option value="3">Hatch</option>
+                    <option value="4">Picape</option>
+                <optgroup label="Nissan">
+                    <option value="1">Sedan</option>
+                    <option value="2">SUV</option>
+                    <option value="3">Hatch</option>
+                    <option value="4">Picape</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <button class="largura botao" type="submit">Enviar dados</button>
     </section>
-    <fieldset class="largura">
-        <legend>Dados pessoais</legend>
-        <label for="">Nome</label>
-        <input type="text" name="" id="" placeholder="Digite seu nome">
-        <label for="">Data de nascimento</label>
-        <input type="date" name="" id="">
-        <label for="">Telefone</label>
-        <input type="tel" name="" id="" placeholder="(XX) XXXX-XXXX">
-    </fieldset>
-    <fieldset class="largura">
-        <legend>CNH</legend>
-        <label for="">Número do registro</label>
-        <input type="number" name="" id="" placeholder="Informe o número da sua CNH">
-        <label for="">Validade</label>
-        <input type="date" name="" id="">
-    </fieldset>
-    <fieldset class="largura">
-        <legend>Carro</legend>
-        <label for="">Modelo do Carro</label>
-        <select name="car-model" id="car-model">
-            <optgroup label="Nissan">
-                <option value="1">Sedan</option>
-                <option value="2">SUV</option>
-                <option value="3">Hatch</option>
-                <option value="4">Picape</option>
-            <optgroup label="Nissan">
-                <option value="1">Sedan</option>
-                <option value="2">SUV</option>
-                <option value="3">Hatch</option>
-                <option value="4">Picape</option>
-            </optgroup>
-        </select>
-    </fieldset>
-    <button class="largura botao" type="submit">Enviar dados</button>
     <footer>
         <p>Copyright 2022 - Alucar</p>
     </footer>
