@@ -30,4 +30,20 @@ public class Calculadora {
         num2 = 99;
         System.out.println("Números dentro do método: \nNum1: "+num1+"\nNum2: "+num2);
     }
+
+    public void somaArray(int[] arr){
+        int soma = 0;
+        for (int num : arr){
+            soma += num;
+        }
+        System.out.println(soma);
+    }
+
+    public void somarVarArgs(String res, int... numeros){
+        int soma = 0;
+        for (int num : numeros){
+            soma += num;
+        }
+        System.out.println(res+" "+soma);
+    }
 }
