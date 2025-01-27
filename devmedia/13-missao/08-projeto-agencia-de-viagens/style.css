@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --roxo: #5d15d1;
+}
+
+body {
+    font-family: sans-serif;
+}

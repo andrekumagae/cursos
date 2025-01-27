@@ -14,9 +14,11 @@ public class Testes {
 
         for (int i = 1; i <= 7; i++) {
             dia = (dias/7)*i;
-            System.out.print("Day "+i+": ");
-            result = String.format(java.util.Locale.US,"%.2f", dia);
-            System.out.println(result+"%");
+            //System.out.print("Day "+i+": ");
+            System.out.println("Day "+i);
+            System.out.println();
+            //result = String.format(java.util.Locale.US,"%.2f", dia);
+            //System.out.println(result+"%");
         }
     }
 }
