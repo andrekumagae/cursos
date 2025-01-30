@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Jclassesabstratas.dominio;
+package academy.devdojo.maratonajava.javacore.Lclassesabstratas.dominio;
 
 public abstract class Funcionario extends Pessoa {
     protected String nome;
