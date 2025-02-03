@@ -2,6 +2,7 @@ package academy.devdojo.maratonajava.javacore.Lclassesabstratas.test;
 
 import academy.devdojo.maratonajava.javacore.Lclassesabstratas.dominio.Desenvolvedor;
 import academy.devdojo.maratonajava.javacore.Lclassesabstratas.dominio.Gerente;
+import academy.devdojo.maratonajava.javacore.Lclassesabstratas.dominio.Pessoa;
 
 public class FuncionarioTest01 {
     public static void main(String[] args) {
