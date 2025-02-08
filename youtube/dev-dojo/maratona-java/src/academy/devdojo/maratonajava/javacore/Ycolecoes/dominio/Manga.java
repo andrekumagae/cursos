@@ -71,7 +71,7 @@ public class Manga implements Comparable<Manga> {
 //        else return 1;
 
 //        fazendo ordenacao pelos wrappers Long e String
-//        return this.id.compareTo(outroManga.getId());
+        return this.id.compareTo(outroManga.getId());
 //        return this.nome.compareTo(outroManga.getNome());
 
 //        orenando por tipo primitivo double
