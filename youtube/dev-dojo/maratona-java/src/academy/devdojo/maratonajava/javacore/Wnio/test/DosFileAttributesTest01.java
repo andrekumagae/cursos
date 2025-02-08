@@ -21,13 +21,11 @@ public class DosFileAttributesTest01 {
         System.out.println(dosFileAttributes.isHidden());
         System.out.println(dosFileAttributes.isReadOnly());
         // desativando estas opcoes
-
-
         // alterando e lendo alteracoes
-        DosFileAttributeView dosFileAttributeView = Files.getFileAttributeView(path, DosFileAttributeView.class);
-        dosFileAttributeView.setHidden(true);
-        dosFileAttributeView.setReadOnly(true);
-        System.out.println(dosFileAttributeView.readAttributes().isHidden());
-        System.out.println(dosFileAttributeView.readAttributes().isReadOnly());
+//        DosFileAttributeView dosFileAttributeView = Files.getFileAttributeView(path, DosFileAttributeView.class);
+//        dosFileAttributeView.setHidden(true);
+//        dosFileAttributeView.setReadOnly(true);
+//        System.out.println(dosFileAttributeView.readAttributes().isHidden());
+//        System.out.println(dosFileAttributeView.readAttributes().isReadOnly());
     }
 }
