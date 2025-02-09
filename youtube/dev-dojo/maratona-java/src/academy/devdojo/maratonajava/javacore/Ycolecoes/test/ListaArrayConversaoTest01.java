@@ -59,7 +59,27 @@ public class ListaArrayConversaoTest01 {
         System.out.println("numeros2 = " + numeros2);
         System.out.println("integerListToArrayList2 = " + Arrays.toString(integerListToArrayList2));
 
+        List<Integer> integerList = new ArrayList<>();
+        integerList.add(1);
+        integerList.add(2);
+        integerList.add(3);
+        integerList.add(4);
+        integerList.add(5);
 
+        // Converte List<Integer> para int[]
+        int[] intArray = listToIntArray(integerList);
 
+        // Imprime o array
+        for (int i : intArray) {
+            System.out.print(i + " ");
+        }
+    }
+
+    public static int[] listToIntArray(List<Integer> list) {
+        int[] array = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            array[i] = list.get(i);
+        }
+        return array;
     }
 }
