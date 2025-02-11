@@ -23,5 +23,4 @@ public class CarroRentavelService {
         System.out.println("Carros disponíveis para alugar");
         System.out.println(carrosDisponiveis);
     }
-
 }
