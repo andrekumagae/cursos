@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Zclassesinternas.test;
+package academy.devdojo.maratonajava.javacore.ZZAclassesinternas.test;
 
 class Animal {
     public void andar() {

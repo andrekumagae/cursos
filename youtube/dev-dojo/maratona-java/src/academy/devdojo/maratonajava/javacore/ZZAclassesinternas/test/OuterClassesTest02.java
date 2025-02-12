@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Zclassesinternas.test;
+package academy.devdojo.maratonajava.javacore.ZZAclassesinternas.test;
 
 public class OuterClassesTest02 {
     private String nome = "Midoriya";

@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Zclassesinternas.test;
+package academy.devdojo.maratonajava.javacore.ZZAclassesinternas.test;
 
 public class OuterClassesTest01 {
     private String nome = "Monkey D. Luffy";
