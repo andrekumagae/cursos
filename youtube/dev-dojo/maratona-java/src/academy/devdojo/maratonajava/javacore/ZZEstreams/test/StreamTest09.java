@@ -2,33 +2,36 @@ package academy.devdojo.maratonajava.javacore.ZZEstreams.test;
 
 import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.LightNovel;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
-public class StreamTest08 {
-    private static List<LightNovel> lightNovels = new ArrayList<>(List.of(
-            new LightNovel("Tensei Shittara", 8.99),
-            new LightNovel("Overlord", 10.99),
-            new LightNovel("Violet EvergardenShittara", 5.99),
-            new LightNovel("No Game no life", 2.99),
-            new LightNovel("Fullmetal Alchemist", 5.99),
-            new LightNovel("Kumo desuga", 1.99),
-            new LightNovel("Kumo desuga", 1.99),
-            new LightNovel("Monogatari", 4.00)
-    ));
+public class StreamTest09 {
     public static void main(String[] args) {
-        lightNovels.stream()
-                .map(LightNovel::getPrice)
-                .filter(price -> price > 3)
-                .reduce(Double::sum)
-                .ifPresent(System.out::println);
+        IntStream.rangeClosed(1, 50).filter(n -> n % 2 == 0).forEach(n -> System.out.print(n + " "));
+        System.out.println();
+        IntStream.range(1, 50).filter(n -> n % 2 == 0).forEach(n -> System.out.print(n + " "));
+        System.out.println();
 
-        //opcao sem precisar fazer boxing pelo stream via mapToDouble, pois nosso tipo é double
-        // tbm conseguimos retornar o tipo double em vez de um Optional
-        double sum = lightNovels.stream()
-                .mapToDouble(LightNovel::getPrice)
-                .filter(price -> price > 3)
-                .sum();
-        System.out.println(sum);
+        Stream.of("Eleve","o","cosmo","no seu coração")
+                .map(String::toUpperCase)
+                .forEach(s -> System.out.print(s+ " "));
+        System.out.println();
+        int num[] = {1, 2, 3, 4, 5};
+        Arrays.stream(num)
+                .average()
+                .ifPresent(System.out::println);
+        try (Stream<String> lines = Files.lines(Paths.get("file2.txt"))) {
+            lines.filter(l -> l.contains("Java")).forEach(System.out::println);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        List<Integer> num2 = List.of(1, 2, 3, 4, 5);
+
     }
 }

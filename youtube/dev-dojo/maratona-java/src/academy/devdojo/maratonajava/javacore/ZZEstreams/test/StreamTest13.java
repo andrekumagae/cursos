@@ -2,11 +2,18 @@ package academy.devdojo.maratonajava.javacore.ZZEstreams.test;
 
 import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Category;
 import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.LightNovel;
+import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Promotion;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-public class StreamTest12 {
+import static academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Promotion.*;
+
+public class StreamTest13 {
     private static List<LightNovel> lightNovels = new ArrayList<>(List.of(
             new LightNovel("Tensei Shittara", 8.99, Category.FANTASY),
             new LightNovel("Overlord", 3.99, Category.FANTASY),
@@ -19,35 +26,33 @@ public class StreamTest12 {
     ));
 
     public static void main(String[] args) {
-        //Criando um Map para dividir por categorias de nosso Enumerate
-
-        //metodo sem stream
-        Map<Category, List<LightNovel>> categoryListMap = new HashMap<>();
-        List<LightNovel> fantasyList = new ArrayList<>();
-        List<LightNovel> dramaList = new ArrayList<>();
-        List<LightNovel> romanceList = new ArrayList<>();
-
-        for (LightNovel lightNovel : lightNovels) {
-            switch (lightNovel.getCategory()) {
-                case FANTASY: fantasyList.add(lightNovel); break;
-                case DRAMA: dramaList.add(lightNovel); break;
-                case ROMANCE: romanceList.add(lightNovel); break;
-            }
-        }
-        categoryListMap.put(Category.FANTASY, fantasyList);
-        categoryListMap.put(Category.DRAMA, dramaList);
-        categoryListMap.put(Category.ROMANCE, romanceList);
-        System.out.println(categoryListMap);
-        for (Map.Entry<Category, List<LightNovel>> categoryListEntry : categoryListMap.entrySet()) {
-            System.out.println(categoryListEntry.getKey() + " / " + categoryListEntry.getValue());
-        }
-        System.out.println("====================");
-        //com stream e collectors.groupinBy
-        Map<Category, List<LightNovel>> collect = lightNovels.stream().collect(Collectors.groupingBy(LightNovel::getCategory));
-        System.out.println(collect);
-        for (Map.Entry<Category, List<LightNovel>> categoryListEntry2 : collect.entrySet()) {
-            System.out.println(categoryListEntry2.getKey() + " / " + categoryListEntry2.getValue());
+        // conseguimos realizar o groupingBy de enumerates que não estão como atributos na classe
+        Map<Promotion, List<LightNovel>> collect = lightNovels.stream().collect(Collectors.groupingBy(StreamTest13::getPromotion));
+        for (Map.Entry<Promotion, List<LightNovel>> promotionListEntry : collect.entrySet()) {
+            System.out.println(promotionListEntry.getKey());
+            System.out.println(promotionListEntry.getValue());
         }
 
+        // metodo groupingBy aceita 2 critérios de agrupamento
+
+        // extracao de metodo
+        // Map<Category, Map<Promotion, List<LightNovel>>> collect1 = lightNovels.stream().collect(Collectors.groupingBy(LightNovel::getCategory, Collectors.groupingBy(ln -> getPromotion(ln)));
+        // conversao de expressao lambda para method reference
+        Map<Category, Map<Promotion, List<LightNovel>>> collect1 = lightNovels.stream().collect(Collectors.groupingBy(LightNovel::getCategory, Collectors.groupingBy(
+                StreamTest13::getPromotion)));
+        System.out.println("================");
+        for (Map.Entry<Category, Map<Promotion, List<LightNovel>>> categoryMapEntry : collect1.entrySet()) {
+            System.out.println(categoryMapEntry.getKey());
+            System.out.println(categoryMapEntry.getValue());
+        }
+
+        // versão do groupingBy na função anônima
+        Map<Category, Map<Promotion, List<LightNovel>>> collect2 = lightNovels.stream().collect(Collectors.groupingBy(LightNovel::getCategory, Collectors.groupingBy(
+                ln -> ln.getPrice() < 6 ? UNDER_PROMOTION : NORMAL_PRICE
+        )));
+    }
+
+    private static Promotion getPromotion(LightNovel ln) {
+        return ln.getPrice() < 6 ? UNDER_PROMOTION : NORMAL_PRICE;
     }
 }

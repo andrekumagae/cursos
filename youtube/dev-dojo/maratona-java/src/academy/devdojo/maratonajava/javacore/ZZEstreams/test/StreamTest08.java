@@ -1,29 +1,34 @@
 package academy.devdojo.maratonajava.javacore.ZZEstreams.test;
 
+import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.LightNovel;
+
+import java.util.ArrayList;
 import java.util.List;
 
-public class StreamTest07 {
+public class StreamTest08 {
+    private static List<LightNovel> lightNovels = new ArrayList<>(List.of(
+            new LightNovel("Tensei Shittara", 8.99),
+            new LightNovel("Overlord", 10.99),
+            new LightNovel("Violet EvergardenShittara", 5.99),
+            new LightNovel("No Game no life", 2.99),
+            new LightNovel("Fullmetal Alchemist", 5.99),
+            new LightNovel("Kumo desuga", 1.99),
+            new LightNovel("Kumo desuga", 1.99),
+            new LightNovel("Monogatari", 4.00)
+    ));
     public static void main(String[] args) {
-        List<Integer> integers = List.of(1, 2, 3, 4, 5, 6);
-        //somando
-        integers.stream().reduce((x, y) -> x + y).ifPresent(System.out::println);
-        integers.stream().reduce((x, y) -> x + y).ifPresent(System.out::println);
-        //para soma, há o methor reference de Integer
-        integers.stream().reduce(Integer::sum).ifPresent(System.out::println);
-        //argumento identity já coloca um valor inicial à soma. No exemplo soma 2 + os nuemros do arraylist;
-        // como não vai dar vazio, não precisa de passar pela validacao do optional
-        System.out.println(integers.stream().reduce(2, (x, y) -> x + y));
+        lightNovels.stream()
+                .map(LightNovel::getPrice)
+                .filter(price -> price > 3)
+                .reduce(Double::sum)
+                .ifPresent(System.out::println);
 
-        integers.stream().reduce((x, y) -> x - y).ifPresent(System.out::println);
-        integers.stream().reduce((x, y) -> x * y).ifPresent(System.out::println);
-        List<Double> doubles = List.of(1d, 2d, 3d, 4d, 5d, 6d);
-        doubles.stream().reduce((x, y) -> x / y).ifPresent(System.out::println);
-
-        // validacao de maior e menor
-        integers.stream().reduce((x, y) -> x > y ? x : y).ifPresent(System.out::println);
-        integers.stream().reduce((x, y) -> x < y ? x : y).ifPresent(System.out::println);
-        // tbm há method reference para eles
-        integers.stream().reduce(Integer::max).ifPresent(System.out::println);
-        integers.stream().reduce(Integer::min).ifPresent(System.out::println);
+        //opcao sem precisar fazer boxing pelo stream via mapToDouble, pois nosso tipo é double
+        // tbm conseguimos retornar o tipo double em vez de um Optional
+        double sum = lightNovels.stream()
+                .mapToDouble(LightNovel::getPrice)
+                .filter(price -> price > 3)
+                .sum();
+        System.out.println(sum);
     }
 }

@@ -1,49 +1,53 @@
 package academy.devdojo.maratonajava.javacore.ZZEstreams.test;
 
+import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.Category;
 import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.LightNovel;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-public class StreamTest11 {
+public class StreamTest12 {
     private static List<LightNovel> lightNovels = new ArrayList<>(List.of(
-            new LightNovel("Tensei Shittara", 8.99),
-            new LightNovel("Overlord", 3.99),
-            new LightNovel("Violet EvergardenShittara", 5.99),
-            new LightNovel("No Game no life", 2.99),
-            new LightNovel("Fullmetal Alchemist", 5.99),
-            new LightNovel("Kumo desuga", 1.99),
-            new LightNovel("Kumo desuga", 1.99),
-            new LightNovel("Monogatari", 4.00)
+            new LightNovel("Tensei Shittara", 8.99, Category.FANTASY),
+            new LightNovel("Overlord", 3.99, Category.FANTASY),
+            new LightNovel("Violet EvergardenShittara", 5.99, Category.DRAMA),
+            new LightNovel("No Game no life", 2.99, Category.FANTASY),
+            new LightNovel("Fullmetal Alchemist", 5.99, Category.FANTASY),
+            new LightNovel("Kumo desuga", 1.99, Category.FANTASY),
+            new LightNovel("Kumo desuga", 1.99, Category.FANTASY),
+            new LightNovel("Monogatari", 4.00, Category.ROMANCE)
     ));
+
     public static void main(String[] args) {
-        // count
-        System.out.println(lightNovels.stream().count());
-        // max
-        lightNovels.stream().max(Comparator.comparing(LightNovel::getPrice)).ifPresent(System.out::println);
-        // sum
-        System.out.println(lightNovels.stream().mapToDouble(LightNovel::getPrice).sum());
-        // average
-        lightNovels.stream().mapToDouble(LightNovel::getPrice).average().ifPresent(System.out::println);
+        //Criando um Map para dividir por categorias de nosso Enumerate
 
-        //com metodo collect
-        // count
-        System.out.println(lightNovels.stream().collect(Collectors.counting()));
-        // max
-        lightNovels.stream().collect(Collectors.maxBy(Comparator.comparing(LightNovel::getPrice))).ifPresent(System.out::println);
-        // sum
-        System.out.println(lightNovels.stream().collect(Collectors.summingDouble(LightNovel::getPrice)));
-        // avg
-        System.out.println(lightNovels.stream().collect(Collectors.averagingDouble(LightNovel::getPrice)));
+        //metodo sem stream
+        Map<Category, List<LightNovel>> categoryListMap = new HashMap<>();
+        List<LightNovel> fantasyList = new ArrayList<>();
+        List<LightNovel> dramaList = new ArrayList<>();
+        List<LightNovel> romanceList = new ArrayList<>();
 
-        //Com collect, conseguimos fazer tudo isso com summarizing
-        System.out.println(lightNovels.stream().collect(Collectors.summarizingDouble(LightNovel::getPrice)));
-        // Conseguimos extrair Strings e imprimí-las com delimitadores
-        System.out.println(lightNovels.stream().map(LightNovel::getTitle).collect(Collectors.joining(", ")));
+        for (LightNovel lightNovel : lightNovels) {
+            switch (lightNovel.getCategory()) {
+                case FANTASY: fantasyList.add(lightNovel); break;
+                case DRAMA: dramaList.add(lightNovel); break;
+                case ROMANCE: romanceList.add(lightNovel); break;
+            }
+        }
+        categoryListMap.put(Category.FANTASY, fantasyList);
+        categoryListMap.put(Category.DRAMA, dramaList);
+        categoryListMap.put(Category.ROMANCE, romanceList);
+        System.out.println(categoryListMap);
+        for (Map.Entry<Category, List<LightNovel>> categoryListEntry : categoryListMap.entrySet()) {
+            System.out.println(categoryListEntry.getKey() + " / " + categoryListEntry.getValue());
+        }
+        System.out.println("====================");
+        //com stream e collectors.groupinBy
+        Map<Category, List<LightNovel>> collect = lightNovels.stream().collect(Collectors.groupingBy(LightNovel::getCategory));
+        System.out.println(collect);
+        for (Map.Entry<Category, List<LightNovel>> categoryListEntry2 : collect.entrySet()) {
+            System.out.println(categoryListEntry2.getKey() + " / " + categoryListEntry2.getValue());
+        }
+
     }
 }

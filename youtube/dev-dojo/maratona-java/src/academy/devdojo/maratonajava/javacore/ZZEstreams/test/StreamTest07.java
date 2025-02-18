@@ -1,46 +1,29 @@
 package academy.devdojo.maratonajava.javacore.ZZEstreams.test;
 
-import academy.devdojo.maratonajava.javacore.ZZEstreams.dominio.LightNovel;
-
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Stream;
 
-public class StreamTest06 {
-    private static List<LightNovel> lightNovels = new ArrayList<>(List.of(
-            new LightNovel("Tensei Shittara", 8.99),
-            new LightNovel("Overlord", 3.99),
-            new LightNovel("Violet EvergardenShittara", 5.99),
-            new LightNovel("No Game no life", 2.99),
-            new LightNovel("Fullmetal Alchemist", 5.99),
-            new LightNovel("Kumo desuga", 1.99),
-            new LightNovel("Kumo desuga", 1.99),
-            new LightNovel("Monogatari", 4.00)
-    ));
-
+public class StreamTest07 {
     public static void main(String[] args) {
-        //match utiliza Predicate para retornar um boolean
-        //qualquer correspondência que atenda
-        System.out.println(lightNovels.stream().anyMatch(ln -> ln.getPrice() > 9));
-        //verifica se todos os LightNovel na lista têm um preço maior que 0. Como todos os preços são positivos, o resultado será true.
-        System.out.println(lightNovels.stream().allMatch(ln -> ln.getPrice() > 0));
-        //verifica se nenhum dos LightNovel na lista tem um preço menor que 0. Como todos os preços são positivos, o resultado será true.
-        System.out.println(lightNovels.stream().noneMatch(ln -> ln.getPrice() < 0));
+        List<Integer> integers = List.of(1, 2, 3, 4, 5, 6);
+        //somando
+        integers.stream().reduce((x, y) -> x + y).ifPresent(System.out::println);
+        integers.stream().reduce((x, y) -> x + y).ifPresent(System.out::println);
+        //para soma, há o methor reference de Integer
+        integers.stream().reduce(Integer::sum).ifPresent(System.out::println);
+        //argumento identity já coloca um valor inicial à soma. No exemplo soma 2 + os nuemros do arraylist;
+        // como não vai dar vazio, não precisa de passar pela validacao do optional
+        System.out.println(integers.stream().reduce(2, (x, y) -> x + y));
 
-        // find utiliza um Optional para retornar os objeos buscados
-        //achar qualquer
-        lightNovels.stream().filter(ln -> ln.getPrice() > 3).findAny().ifPresent(System.out::println);
-        // achar o primeiro
-        lightNovels.stream().filter(ln -> ln.getPrice() > 3).findFirst().ifPresent(System.out::println);
-        // ordenando antes de achar
-        lightNovels.stream().filter(ln -> ln.getPrice() > 3).sorted(Comparator.comparing(LightNovel::getPrice)).findFirst().ifPresent(System.out::println);
-        // IntelliJ sugere que utilizemos o metodo min já para pegar o primeiro
-        lightNovels.stream().filter(ln -> ln.getPrice() > 3).min(Comparator.comparing(LightNovel::getPrice)).ifPresent(System.out::println);
-        lightNovels.stream().filter(ln -> ln.getPrice() > 3).sorted(Comparator.comparing(LightNovel::getPrice).reversed()).findFirst().ifPresent(System.out::println);
-        // IntelliJ sugere que utilizemos o metodo max já para pegar o ultimo
-        lightNovels.stream().filter(ln -> ln.getPrice() > 3).max(Comparator.comparing(LightNovel::getPrice)).ifPresent(System.out::println);
+        integers.stream().reduce((x, y) -> x - y).ifPresent(System.out::println);
+        integers.stream().reduce((x, y) -> x * y).ifPresent(System.out::println);
+        List<Double> doubles = List.of(1d, 2d, 3d, 4d, 5d, 6d);
+        doubles.stream().reduce((x, y) -> x / y).ifPresent(System.out::println);
 
+        // validacao de maior e menor
+        integers.stream().reduce((x, y) -> x > y ? x : y).ifPresent(System.out::println);
+        integers.stream().reduce((x, y) -> x < y ? x : y).ifPresent(System.out::println);
+        // tbm há method reference para eles
+        integers.stream().reduce(Integer::max).ifPresent(System.out::println);
+        integers.stream().reduce(Integer::min).ifPresent(System.out::println);
     }
 }
